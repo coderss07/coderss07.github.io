@@ -19,7 +19,7 @@ document.querySelectorAll('.ham')[0].addEventListener("click", () => {
 
 // Skill Fetching
 
-fetch("/skills_data.json").then(response => response.json()).then(resp => {
+fetch("skills_data.json").then(response => response.json()).then(resp => {
 	const skills_obj = document.getElementById('skills');
 	let skillContent = skills_obj.innerHTML;
 	resp.data.forEach(element => {
@@ -42,7 +42,7 @@ fetch("/skills_data.json").then(response => response.json()).then(resp => {
 
 // Project Data Fetching
 
-fetch("/project_data.json").then(response => response.json()).then(resp => {
+fetch("project_data.json").then(response => response.json()).then(resp => {
 	const project_info = document.getElementById('new-line');
 	
 	let projectDescription = project_info.innerHTML;
@@ -68,7 +68,7 @@ fetch("/project_data.json").then(response => response.json()).then(resp => {
 	console.log(project_info.innerHTML);
 })
 
-fetch("/project_data.json").then(response => response.json()).then(resp => {
+fetch("project_data.json").then(response => response.json()).then(resp => {
 	const project_obj = document.querySelector('.project-container');
 	let projectContent = project_obj.innerHTML;
 	resp.data.forEach(element => {
@@ -127,7 +127,7 @@ window.onclick = function(event) {
 
 // Achievements Data Fetching
 
-fetch("/achievements_data.json").then(response => response.json()).then(resp => {
+fetch("achievements_data.json").then(response => response.json()).then(resp => {
 	const project_obj = document.querySelector('.achievement-container');
 	let achievementContent = project_obj.innerHTML;
 	resp.data.forEach(element => {
