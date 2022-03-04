@@ -1,0 +1,144 @@
+@media (min-width: 400px) and (max-width: 1000px)  {
+    .line {  width: 50%; margin: 10px auto; }
+    .sidebar {
+        position: -webkit-fixed;
+        position: fixed;
+        z-index: 2;
+        height: 550px;
+        box-shadow: 3px 3px 8px rgb(73, 22, 22);
+    }
+    .sidebar h2 { font-size: 20px }
+    #navbar li { padding: 5px 0; }
+    #navbar li a { font-size: 15px; padding: 3px 8px; letter-spacing: 0.2px; }
+    #cross { margin-left: 145px; }
+
+    i.fa-2xl { font-size: 25px;}
+
+    .info { padding-right: 0px; height: 90vh;}
+    .intro { height: 100%; margin-left: 10px; padding-left: 10px; }
+    
+    .intro div { padding: 4px; }
+    #hello { font-weight: bold; font-size: 1.4rem; font-family: arial; }
+    #name { font-size: 12px; }
+    #name b { font-size: 17px; }
+    #passion { font-size: 12px; }
+    .btn { height: 30px; font-size: 10px; }
+
+    .bitmoji { margin-right: -20px; width: 70%; }
+    .bitmoji img { height: 150px; }
+
+    .box { width: 100%; height: 70%; }
+    .box> h2 { font-size: 1.4rem; }
+
+    #about div { margin: 50px 40px;}
+    #self { font-size: 12px;}
+    #more-about { font-size: 11px; margin: 20px 0; letter-spacing: 0.4px; }
+
+    .skill-name, .skill-value { font-size: 12px; margin: 5px 0;}
+    .skill-value { margin-left: auto; }
+
+    .progress-bar { height: 10px; margin-top: 4px; }
+    .progress-bar> div { height: 10px; }
+
+    .project-box {width: 250px; height: 250px;}
+    .project-box h3 {text-align: center}
+    .project-box img {height: 100px; width: 200px;}
+
+    .open-btn { font-size: 10px;}
+
+    .project-info {width: 250px; height: 300px; padding: 10px;}
+    .project-info img {width: 200px; height: 100px}
+    .project-info h2 { font-size: 1.3rem; }
+    .project-description { font-size: 12px; }
+    .project-info h2, img, p, button {margin: 6px 0}
+    .Modal {padding-top: 300px;}
+    .Close {font-size: 12px}
+
+    .achievement-box {width: 320px;}
+    .achievement-box img {width: 260px;}
+    .achievement-box li { font-size: 13px; margin-left: 20px; }
+
+    #my-form { width: 330px; height: 370px;}
+    #message { height: 80px; font-size: 10px; }
+    input { margin: 4px auto; height: 20px; font-size: 10px; }
+    .contact-btn {height: 20px; width: 100px; font-size: 11px}
+
+    #foot { height: 200px; }
+    .social-media {width: 150px; height: 30px;}
+    .icon { font-size: 15px; margin: 5px auto;}
+    .foot-content { font-size: 12px; margin: 3px 0; }
+}
+
+@media (max-width: 400px) {
+    .line { width: 50%; margin: 10px auto; height: 1.4px; }
+    .sidebar {
+        position: -webkit-fixed;
+        position: fixed;
+        z-index: 2;
+        height: 550px;
+        box-shadow: 3px 3px 8px rgb(73, 22, 22);
+    }
+    .sidebar h2 { font-size: 20px }
+    #navbar li { padding: 4px 0; }
+    #navbar li a { font-size: 14px; padding: 3px 8px; letter-spacing: 0.2px; }
+    #cross { margin-left: 140px; }
+
+    i.fa-2xl { font-size: 20px;}
+
+    .info { padding-right: 0px; height: 95vh;}
+    .intro { height: 100%; margin-left: 6px; padding-left: 10px; }
+    
+    .intro div { padding: 2px; }
+    #hello { font-weight: bold; font-size: 25px; font-family: arial; }
+    #name { font-size: 10px; }
+    #name b { font-size: 14px; }
+    #passion { font-size: 9px; }
+    .btn { height: 28px; font-size: 8px; }
+
+    .bitmoji { margin-right: -20px; }
+    .bitmoji img { height: 120px; }
+
+    .box { width: 100%; height: 70%; }
+    .box> h2 { font-size: 1.4rem; }
+
+    #about div { margin: 40px 30px;}
+    #self { font-size: 10px;}
+    #more-about { font-size: 11px; margin: 20px 0; letter-spacing: 0.4px; }
+
+    .skill-name, .skill-value { font-size: 10px; margin: 3px 0;}
+    .skill-value { margin-left: auto; font-size: 10px; }
+
+    .progress-bar { height: 8px; margin-top: 3px; }
+    .progress-bar> div { height: 8px; }
+
+    .project-container {grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));}
+    .project-box {width: 230px; height: 220px;}
+    .project-box h3 {text-align: center; font-size: 1.2rem;}
+    .project-box img {height: 90px; width: 180px;}
+
+    .open-btn { font-size: 8px; margin: 5px 0; padding: 3px 15px;}
+
+    .project-info {width: 250px; height: 270px; padding: 10px;}
+    .project-info img {width: 200px; height: 100px}
+    .project-info h2 { font-size: 1.2rem; }
+    .project-description { font-size: 10px; }
+    .project-info h2, img, p, button {margin: 5px 0}
+    .Modal {padding-top: 150px;}
+    .Close {font-size: 12px}
+
+    .achievement-container {width: 100%;}
+    .achievement-box {width: 220px;}
+    .achievement-box img {width: 160px;}
+    .achievement-box li { font-size: 9px; margin-left: 20px; }
+
+    #my-form { width: 200px; height: 320px;}
+    .input-head { font-size: 10px; margin: 5px 0}
+    #message { height: 80px; font-size: 8px; margin-bottom: 5px; }
+    input { margin: 0px; height: 15px; font-size: 8px; }
+    .contact-btn {height: 20px; width: 100px; font-size: 10px}
+
+    #foot { height: 200px; }
+    .social-media {width: 150px; height: 30px;}
+    .icon { font-size: 15px; margin: 5px auto;}
+    .foot-content { font-size: 12px; margin: 3px 0; }
+}
