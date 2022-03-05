@@ -9,10 +9,6 @@
             "level": 85
         },
         {
-            "skill": "Object Oriented Programming",
-            "level": 75
-        },
-        {
             "skill": "DataBase Management System",
             "level": 75
         },
@@ -45,6 +41,10 @@
             "level": 70
         },
         {
+            "skill": "Object Oriented Programming",
+            "level": 75
+        },
+        {
             "skill": "JavaScript",
             "level": 60
         },
@@ -53,8 +53,8 @@
             "level": 70
         },
         {
-            "skill": "Microsoft Azure",
-            "level": 50
+            "skill": "PUG",
+            "level": 75
         },
         {
             "skill": "Microsoft Office",
@@ -63,6 +63,10 @@
         {
             "skill": "VS Code",
             "level": 70
+        },
+        {
+            "skill": "Microsoft Azure",
+            "level": 50
         },
         {
             "skill": "Computer Hardware",

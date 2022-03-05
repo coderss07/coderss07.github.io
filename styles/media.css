@@ -12,8 +12,6 @@
     #navbar li a { font-size: 15px; padding: 3px 8px; letter-spacing: 0.2px; }
     #cross { margin-left: 145px; }
 
-    i.fa-2xl { font-size: 25px;}
-
     .info { padding-right: 0px; height: 90vh;}
     .intro { margin-left: 30px; padding-left: 10px; }
     
@@ -34,11 +32,12 @@
     #self { font-size: 12px; width: 75%;}
     #more-about { font-size: 11px; margin: 20px 0; letter-spacing: 0.4px; width: 75%;}
 
-    .skill-name, .skill-value { font-size: 12px; margin: 5px 0; letter-spacing: 0.9px;}
-    .skill-value { margin-left: auto; }
+    .skill-package {padding: 10px 15px; margin: 15px 0; width: 60%;}
+    .skill-name { font-size: 12px; margin: 5px 0; letter-spacing: 0.7px;}
+    .skill-value { margin-left: auto; font-size: 12px; letter-spacing: 0.7px;}
 
-    .progress-bar { height: 10px; margin-top: 4px; }
-    .progress-bar> div { height: 10px; }
+    .progress-bar { height: 15px; margin-top: 4px; }
+    .progress-bar> div { height: 15px; }
 
     .project-container { grid-column-gap: 20px; }
     .project-box {width: 250px;}
@@ -84,9 +83,7 @@
     #navbar li a { font-size: 14px; padding: 3px 8px; letter-spacing: 0.2px; }
     #cross { margin-left: 140px; }
 
-    i.fa-2xl { font-size: 20px;}
-
-    .info { padding-right: 0px; height: 90vh;}
+    .info { padding-right: 0px; height: 86vh;}
     .intro { height: 100%; margin-left: 20px; padding-left: 10px; }
     
     .intro div { padding: 2px; }
@@ -106,8 +103,9 @@
     #self { font-size: 10px; width: 75%;}
     #more-about { font-size: 11px; margin: 20px auto; letter-spacing: 0.4px; width: 75%; }
 
-    .skill-name, .skill-value { font-size: 10px; margin: 3px 0; letter-spacing: 0.8px;}
-    .skill-value { margin-left: auto; font-size: 10px; }
+    .skill-package {padding: 6px 10px; margin: 10px 0;}
+    .skill-name { font-size: 10px; margin: 3px 0; letter-spacing: 0.5px;}
+    .skill-value { margin-left: auto; font-size: 10px; font-size: 10px; letter-spacing: 0.5px;}
 
     .progress-bar { height: 8px; margin-top: 3px; }
     .progress-bar> div { height: 8px; }
@@ -158,8 +156,6 @@
     
     #cross { margin-left: 125px; }
 
-    i.fa-2xl { font-size: 17px;}
-
     .box> h2 { font-size: 1.1rem; }
 
     .project-container { display: flex; flex-direction: column; }
@@ -189,6 +185,13 @@
     .bitmoji img { height: 80px; }
     .info { padding-right: 0px; height: 83vh;}
 
+    .skill-box { margin: 7px 0;}
+    .skill-name { font-size: 7px; margin-top: 7px; margin-bottom: 0; letter-spacing: 0.2px;}
+    .skill-value { margin-left: auto; font-size: 7px; letter-spacing: 0.2px;}
+
+    .progress-bar { height: 6px; margin-top: 3px; }
+    .progress-bar> div { height: 6px; }
+
     #my-form { width: 160px; height: 180px; padding: 8px;}
     .input-head { font-size: 8px; margin: 3px 0}
     .input-box { margin: 3px auto; height: 12px; font-size: 6px; }
@@ -203,12 +206,5 @@
 
 @media (max-width: 282px) {
     .Modal {padding-top: 50px;}
-
-    .skill-box { margin: 7px 0;}
-    .skill-name, .skill-value { font-size: 8px; margin: 2px, 0; letter-spacing: 0.5px;}
-    .skill-value { font-size: 8px; }
-
-    .progress-bar { height: 6px; margin-top: 3px; }
-    .progress-bar> div { height: 6px; }
-
+    i.fa-2xl { font-size: 25px;}
 }

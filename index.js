@@ -19,12 +19,13 @@ document.querySelectorAll('.ham')[0].addEventListener("click", () => {
 
 // Skill Fetching
 
-fetch("skillsData.json").then(response => response.json()).then(resp => {
+fetch("/skills_data.json").then(response => response.json()).then(resp => {
 	const skills_obj = document.getElementById('skills');
 	let skillContent = skills_obj.innerHTML;
-	resp.data.forEach(element => {
-		let skill = element.skill;
-		let level = element.level;
+	const obj = resp.data;
+	for(var i = 0; i < obj.length; i++) {
+		let skill = obj[i].skill;
+		let level = obj[i].level;
 
 		let ele = `<div class="skill-box reveal">\n
 			<div class="skill-attribute"> 
@@ -35,14 +36,28 @@ fetch("skillsData.json").then(response => response.json()).then(resp => {
 				<div style="width: ${level}%;"></div>\n
 			</div>
 		</div>`;
-		skillContent += ele;
-	})
+		i++;
+		if(i < obj.length) {
+			skill = obj[i].skill;
+			level = obj[i].level;
+			ele += `<div class="skill-box reveal">\n
+				<div class="skill-attribute"> 
+					<p class="skill-name">${skill}</p>
+					<p class="skill-value">${level}%</p>
+				</div>\n
+				<div class="progress-bar">
+					<div style="width: ${level}%;"></div>\n
+				</div>
+			</div>`;
+		}
+		skillContent += `<div class="skill-package">${ele}</div>`;
+	}
 	skills_obj.innerHTML = skillContent;
 })
 
 // Project Data Fetching
 
-fetch("projectData.json").then(response => response.json()).then(resp => {
+fetch("/project_data.json").then(response => response.json()).then(resp => {
 	const project_info = document.getElementById('new-line');
 	
 	let projectDescription = project_info.innerHTML;
@@ -68,7 +83,7 @@ fetch("projectData.json").then(response => response.json()).then(resp => {
 	console.log(project_info.innerHTML);
 })
 
-fetch("projectData.json").then(response => response.json()).then(resp => {
+fetch("/project_data.json").then(response => response.json()).then(resp => {
 	const project_obj = document.querySelector('.project-container');
 	let projectContent = project_obj.innerHTML;
 	resp.data.forEach(element => {
@@ -127,7 +142,7 @@ window.onclick = function(event) {
 
 // Achievements Data Fetching
 
-fetch("achievementsData.json").then(response => response.json()).then(resp => {
+fetch("/achievements_data.json").then(response => response.json()).then(resp => {
 	const project_obj = document.querySelector('.achievement-container');
 	let achievementContent = project_obj.innerHTML;
 	resp.data.forEach(element => {
@@ -204,19 +219,4 @@ function sendEmail(name, email, subject, message) {
 		Body: `Email: ${email} <br> Message: ${message}`,
 	}).then((message) => alert('Message Sent Successfully...'));
 }
-
-// $(function () {
-// 	$('#button').click(function () {
-// 	  $('.modal').addClass('open');
-  
-// 	  if ($('.modal').hasClass('open')) {
-// 		$('.cont').addClass('blur');
-// 	  }
-// 	});
-  
-// 	$('.close').click(function () {
-// 	  $('.modal').removeClass('open');
-// 	  $('.cont').removeClass('blur');
-// 	});
-//   });
 

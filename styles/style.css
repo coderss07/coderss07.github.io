@@ -290,6 +290,7 @@ html {
 }
 
 #about {
+    height: 100%;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -349,9 +350,17 @@ html {
     margin-bottom: 20px;
 }
 
+.skill-package {
+    width: 65%;
+    /* border: 2px solid red; */
+    margin: 20px 0;
+    padding: 25px;
+    box-shadow: 3px 3px 15px;
+}
+
 .skill-box {
     /* border: 1px solid red; */
-    width: 60%;
+    width: 100%;
     margin: 13px 0;
 }
 
