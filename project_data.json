@@ -5,28 +5,28 @@
             "title": "My Personal Portfolio",
             "description": "It was made in HTML, CSS and Javascript",
             "imageURL": "images/portfolio.png",
-            "url": "https://github.com/sarthu858/PersonalPortfolio"
+            "url": "https://github.com/coderss07/coderss07.github.io"
         },
         {
             "id": "keyboard",
             "title": "On Screen Keyboard",
             "description": "It was made in HTML, CSS and Javascript",
             "imageURL": "images/OnScreenKeyboard.png",
-            "url": "https://github.com/sarthu858/OnScreenKeyboard"
+            "url": "https://github.com/coderss07/On-Screen-Keyboard"
         },
         {
             "id": "calendar",
             "title": "Calendar Application",
             "description": "It was made in C",
             "imageURL": "images/Calender.png",
-            "url": "https://github.com/sarthu858/Calendar"
+            "url": "https://github.com/coderss07/Calendar-Application"
         },
         {
             "id": "drs",
             "title": "Decision Review System",
             "description": "It was made in Python",
             "imageURL": "images/DRS.png",
-            "url": "https://github.com/sarthu858/DRS"
+            "url": "https://github.com/coderss07/Decision-Review-System"
         }
     ]
 }
