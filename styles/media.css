@@ -12,8 +12,6 @@
     #navbar li a { font-size: 15px; padding: 3px 8px; letter-spacing: 0.2px; }
     #cross { margin-left: 145px; }
 
-    i.fa-2xl { font-size: 25px;}
-
     .info { padding-right: 0px; height: 90vh;}
     .intro { margin-left: 30px; padding-left: 10px; }
     
@@ -84,9 +82,7 @@
     #navbar li a { font-size: 14px; padding: 3px 8px; letter-spacing: 0.2px; }
     #cross { margin-left: 140px; }
 
-    i.fa-2xl { font-size: 20px;}
-
-    .info { padding-right: 0px; height: 90vh;}
+    .info { padding-right: 0px; height: 86vh;}
     .intro { height: 100%; margin-left: 20px; padding-left: 10px; }
     
     .intro div { padding: 2px; }
@@ -158,7 +154,6 @@
     
     #cross { margin-left: 125px; }
 
-    i.fa-2xl { font-size: 17px;}
 
     .box> h2 { font-size: 1.1rem; }
 
@@ -203,6 +198,7 @@
 
 @media (max-width: 282px) {
     .Modal {padding-top: 50px;}
+    i.fa-2xl { font-size: 25px;}
 
     .skill-box { margin: 7px 0;}
     .skill-name, .skill-value { font-size: 8px; margin: 2px, 0; letter-spacing: 0.5px;}
