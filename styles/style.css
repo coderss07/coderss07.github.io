@@ -154,7 +154,7 @@ html {
 	top: -40px;
 	left: 0px;
 	right: 0px;
-	bottom: -70px;
+	bottom: -90px;
 	opacity: 50%;
 }
 
@@ -166,6 +166,7 @@ html {
     justify-content: space-between;
 }
 .intro {
+    /* border: 2px solid black; */
     height: 300px;
     margin-top: auto;
     margin-bottom: auto;
@@ -222,6 +223,7 @@ html {
 }
 
 .bitmoji {
+    /* border: 1px solid green; */
     margin-right: 100px;
 }
 
