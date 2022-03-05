@@ -132,7 +132,7 @@ html {
 .container {
     /* border: 1px solid black; */
     height: 100%;
-    width: 100%;
+	width: 100%;
     /* transition: transform 0.5s ease-out; */
 }
 
@@ -148,14 +148,14 @@ html {
 .info::before {
     z-index: -2;
     content: "";
-    background: url("../images/new.jpg") no-repeat center fixed;
-    background-size: cover;
-    position: absolute;
-    top: -40px;
-    left: 0px;
-    right: 0px;
-    bottom: -70px;
-    opacity: 50%;
+	background: url("../images/new.jpg") no-repeat center fixed;
+	background-size: cover;
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	right: 0px;
+	bottom: -70px;
+	opacity: 50%;
 }
 
 .first-page {
@@ -325,15 +325,15 @@ html {
 
 
 ::-webkit-scrollbar {
-    width: 6px;
-    height: 10px;
-    background: rgb(121, 118, 118);
+	width: 6px;
+	height: 10px;
+	background: rgb(121, 118, 118);
 }
 
 ::-webkit-scrollbar-thumb {
-    display: hidden;
-    background: black;
-    border-radius: 10px;
+	display: hidden;
+	background: black;
+	border-radius: 10px;
 }
 
 /* Skill Section Styling */
