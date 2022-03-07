@@ -237,7 +237,7 @@ html {
     cursor: pointer;
 }
 
-#scroll {
+.scroll {
     /*border: 3px solid red;*/
     color: black;
     height: 25px;
@@ -295,6 +295,7 @@ html {
 #about {
     height: 100%;
     margin-top: 100px;
+    /* margin-bottom: 100px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -328,8 +329,8 @@ html {
 
 
 ::-webkit-scrollbar {
-	width: 6px;
-	height: 10px;
+	width: 8px;
+	height: 8px;
 	background: rgb(121, 118, 118);
 }
 
@@ -644,6 +645,40 @@ html {
     color: white;
 }
 
+#up-arrow-1 {
+    width: 200px;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80vh;
+    bottom: 500px;
+    z-index: 3;
+    margin-top: -200px;
+    /* margin-bottom: 150px; */
+    margin-bottom: clamp(100px, 25vw, 0px);;
+    /* border: 2px solid black; */
+}
+
+#up-arrow-2 {
+    display: none;
+    color: black;
+    z-index: 2;
+    position: relative;
+    animation: blinker 1s ease-in-out infinite;
+    margin: 20px 0;
+}
+
+#up-arrow-1 a, #up-arrow-2 a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
 /* Footer Secton */
 
 #foot {
@@ -656,7 +691,6 @@ html {
     font-size: 1.1rem;
     color: rgb(145, 144, 144);
     letter-spacing: 1.4px;
-    display: flex;
     flex-direction: column;
 }
 
