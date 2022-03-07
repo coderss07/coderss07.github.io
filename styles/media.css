@@ -44,7 +44,7 @@
     .progress-bar { height: 15px; margin-top: 4px; }
     .progress-bar> div { height: 15px; }
 
-    .project-container { grid-column-gap: 20px; }
+    .project-container { grid-column-gap: 0px; }
     .project-box {width: 250px;}
     .project-box h3 {text-align: center}
     .project-box img { width: 200px;}
