@@ -238,6 +238,7 @@ html {
 }
 
 #scroll {
+    /*border: 3px solid red;*/
     color: black;
     height: 25px;
     z-index: 2;
