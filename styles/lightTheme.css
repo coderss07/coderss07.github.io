@@ -75,7 +75,7 @@ body {
 
 .all-box::before {
 	content: "";
-    background: url("../images/white2.jpg") repeat fixed;
+    background: url("../images/white.jpg") repeat fixed;
     position: fixed;
     z-index: -4;
     top: 0px;
