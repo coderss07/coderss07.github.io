@@ -69,7 +69,7 @@ fetch("/project_data.json").then(response => response.json()).then(resp => {
 		let url = element.url;					
 		let des = `<div id="${id}" class="Modal is-hidden is-visuallyHidden">
 						<div class="project-info">
-						    <span onclick="close_modal('${id}')" class="Close">&times;</span>
+							<span onclick="close_modal('${id}')" class="Close">&times;</span>
 							<h2 class="reveal">${title}</h2>
 							<img class="reveal" src="${imageURL}" alt="">
 							<p class="project-description reveal"> ${description} </p>
@@ -169,6 +169,7 @@ document.querySelector('.btn').addEventListener("click", () => {
 	window.open('SarthakSharma.pdf')
 });
 
+// Scroll Animation
 
 function reveal() {
 	var reveals = document.querySelectorAll(".reveal");
@@ -176,7 +177,7 @@ function reveal() {
 	for(var i = 0; i < reveals.length; i++) {
 		var windowHeight = window.innerHeight;
 		var elementTop = reveals[i].getBoundingClientRect().top;
-		var elementVisible = 50;
+		var elementVisible = 30;
 	
 		if (elementTop < windowHeight - elementVisible) {
 			reveals[i].classList.add("active");
@@ -189,41 +190,58 @@ window.addEventListener("scroll", reveal);
 
 // Contact through Mail
 
-document.querySelector('.contact-btn').addEventListener("click", submitForm);
+var data_js = { "access_token": "g2y6ytjwdn3hpfol9vh01f09" };
 
-function submitForm(e) {
-	e.preventDefault();
-
+function js_send() {
+	var request = new XMLHttpRequest();
+	request.onreadystatechange = function() {
+		if (request.readyState == 4 && request.status == 200) {
+			alert("Message Sent Successfully...");
+		} else if(request.readyState == 4) {
+			alert("Message not sent. Check Your Connection...");
+		}
+	};
 	let name = document.querySelector("#name-input").value;
 	let email = document.querySelector("#email-input").value;
 	let subject = document.querySelector("#subject-input").value;
 	let message = document.querySelector("#message").value;
-	console.log(name, email, subject, message)
-
-	document.querySelector('#my-form').reset();
+	document.getElementById("my-form").reset();
 	
-	sendEmail(name, email, subject, message);
+	data_js['extra_from'] = name;
+	data_js["extra_sender's_email"] = email;
+	data_js['subject'] = subject;
+	data_js['text'] ="Message: " + message;
+	var params = toParams(data_js);
+	
+	request.open("POST", "https://postmail.invotes.com/send", true);
+	request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	
+	request.send(params);
+	return false;
 }
 
-function sendEmail(name, email, subject, message) {
-	
-	Email.send({
-		Host: "smtp.gmail.com",
-		Username: 'sarthaksharma0709@gmail.com',
-		Password: 'kxogzgkhohfbaxaw',
-		To: 'sarthaksharma0709@gmail.com',
-		From: `${email}`,
-		Subject: `${name}: ${subject}`,
-		Body: `Email: ${email} <br> Message: ${message}`,
-	}).then((message) => alert('Message Sent Successfully...'));
+var sendButton = document.querySelector('.contact-btn');
+sendButton.onclick = js_send;
+
+function toParams(data_js) {
+	var form_data = [];
+	for ( var key in data_js ) {
+		form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+	}
+	return form_data.join("&");
 }
+
+var js_form = document.getElementById("my-form");
+js_form.addEventListener("submit", function (e) {
+	e.preventDefault();
+});
 
 // Change Themes
 
 const originalTheme = [];
 
 function change_theme(mode) {
-    var theme = document.querySelector('#theme-link');
+	var theme = document.querySelector('#theme-link');
 	if(mode == 'dark-mode') {
 		theme.href = "styles/darkTheme.css";
 	}else if(mode == 'blue-mode') {
