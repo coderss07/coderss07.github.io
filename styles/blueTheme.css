@@ -1,0 +1,191 @@
+body {
+    background-color: rgb(38, 38, 197);
+    color: white;  
+}
+
+.line {
+    background-color: black;
+}
+
+.sidebar {
+    background-color: rgb(132, 0, 255);
+    box-shadow: 5px 0 8px rgb(204, 204, 204);
+}
+
+#navbar li a {
+    color: rgb(255, 255, 255);
+}
+
+#navbar li a:hover {
+    background-color: white;
+    color: rgb(0, 10, 104);
+}
+
+#menu:hover {
+    color: rgb(141, 141, 141);
+}
+
+.info::before {
+    opacity: 80%;
+}
+
+#cross:hover {
+    color: rgb(141, 141, 141);
+}
+
+.mode i {
+    text-shadow: 0 0 30px white;
+}
+
+.mode i:hover {
+    color: rgb(141, 141, 141);
+}
+
+.dropdown-content {
+    background-color: #bc2bff;
+    min-width: 90px;
+    box-shadow: 2px 5px 15px rgb(255, 255, 255);
+    z-index: 4;
+}
+
+.dropdown-content a {
+    color: rgb(1, 0, 43);
+}
+  
+.dropdown-content a:hover {
+    background-color: rgb(7, 0, 71);
+    color: rgb(255, 255, 255);
+}
+
+#name, #passion { 
+    color: white;
+}
+
+#name b {
+    color: #fa8f51;
+    text-shadow: 0px 0px 3px;
+}
+
+.all-box::before {
+	content: "";
+    background: url("../images/blue.jpg") repeat fixed;
+    background-size: cover;
+    position: fixed;
+    z-index: -4;
+    top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+    opacity: 30%;
+}
+
+.box> h2 { 
+    color: white;
+}
+
+#self {
+    color: rgb(238, 238, 238);
+}
+
+#more-about li {
+    font-weight: bold;
+    color: rgb(238, 238, 238);
+}
+
+.skill-package {
+    background-color: rgb(0, 39, 75);
+    box-shadow: 3px 3px 15px white;
+}
+
+.skill-name, .skill-value {
+    color: white;
+}
+
+.progress-bar { 
+    background-color: rgb(210, 248, 255);
+    box-shadow: 2px 2px 10px rgb(250, 250, 250);
+}
+
+.progress-bar> div {
+    background-image: linear-gradient(to right, rgba(0, 255, 0, 0.89), rgb(255, 0, 0));
+}
+
+.project-box {
+    background-color: rgb(0, 39, 75);
+    box-shadow: 3px 3px 15px white;
+}
+
+.project-box h3 {
+    color: white;
+}
+
+.project-box img {
+    box-shadow: 2px 2px 10px white;
+}
+
+.open-btn:hover {
+    color: white;
+    background-color: rgb(83, 0, 0);
+}
+
+.project-info {
+    background-color: rgb(0, 39, 75);
+}
+
+.Modal {
+    background-color: rgba(251, 252, 255, 0.363);
+}
+
+.Close {
+    color: white;
+}
+
+.Close:hover {
+    color: rgb(185, 185, 185);
+}
+
+.project-info img {
+    box-shadow: 0px 0px 15px white;
+}
+
+.achievement-box {
+    background-color: rgb(0, 39, 75);
+    box-shadow: 3px 3px 15px white;
+}
+
+.achievement-box img {
+    box-shadow: 3px 3px 15px white;
+}
+
+.achievement-box li {
+    color: white;
+}
+
+#my-form {
+    background-color: rgb(0, 39, 75);
+    box-shadow: 3px 3px 10px white;
+}
+
+.input-head {
+    color: white;
+}
+
+.input-box {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    box-shadow: 2px 2px 8px rgb(196, 196, 196);
+}
+
+.contact-btn:hover {
+    background-color: rgb(88, 68, 68);
+    color: white;
+}
+
+#foot {
+    background-color: rgb(64, 55, 104);
+    color: rgb(233, 233, 233);
+}
+
+.icon {
+    color: rgb(255, 255, 255);
+}

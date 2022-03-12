@@ -1,0 +1,177 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+.line {
+    background-color: black;
+}
+
+.sidebar {
+    background-color: rgb(194, 194, 194);
+    box-shadow: 2px 0 8px rgb(73, 22, 22);
+}
+
+#navbar li a {
+    color: black;
+}
+
+#navbar li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.info::before {
+    opacity: 70%;
+}
+
+#menu:hover {
+    color: rgb(199, 199, 199);
+}
+
+#cross:hover {
+    color: rgb(158, 158, 243);
+}
+
+.mode i {
+    text-shadow: 0 0 30px white;
+}
+
+.mode i:hover {
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    /* border: 3px solid red; */
+    position: absolute;
+    margin-top: 10px;
+    margin-right: 16px;
+    background-color: #d3d3d3;
+    min-width: 90px;
+    box-shadow: 2px 5px 15px black;
+    z-index: 4;
+}
+
+.dropdown-content a {
+    color: black;
+}
+  
+.dropdown-content a:hover {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+#name, #passion { 
+    color: black;
+}
+
+#name b {
+    color: rgb(179, 0, 0);
+    text-shadow: 0px 0px 15px;
+}
+
+.box> h2 { 
+    color: black;
+}
+
+#self {
+    color: rgb(73, 72, 72);
+}
+
+#more-about li {
+    color: rgb(73, 72, 72);
+}
+
+.skill-package {
+    background-color: white;
+    box-shadow: 3px 3px 15px black;
+}
+
+.skill-name, .skill-value {
+    color: rgb(0, 0, 0);
+}
+
+.progress-bar { 
+    background-color: rgb(187, 183, 183);
+    box-shadow: 2px 2px 5px black;
+}
+
+.progress-bar> div {
+    background-image: linear-gradient(to right, rgb(119, 102, 194), rgb(231, 0, 0));
+}
+
+.project-box {
+    box-shadow: 3px 3px 15px black;
+}
+
+.project-box h3 {
+    color: black;
+}
+
+.open-btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.project-info {
+    background-color: white;
+}
+
+.Modal {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Close {
+    color: #aaaaaa;
+}
+
+.Close:hover {
+    color: #000;
+}
+
+.project-info img {
+    box-shadow: 0px 0px 15px black;
+}
+
+.achievement-box {
+    background-color: white;
+    box-shadow: 3px 3px 15px black;
+}
+
+.achievement-box li {
+    color: black;
+}
+
+.achievement-box img {
+    box-shadow: 2px 2px 15px black;
+}
+
+#my-form {
+    background-color: white;
+    box-shadow: 3px 3px 10px black;
+}
+
+.input-head {
+    color: black;
+}
+
+.input-box {
+    background-color: rgb(226, 226, 226);
+    border: 1px solid black;
+    box-shadow: 2px 2px 8px black;
+}
+
+.contact-btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#foot {
+    background-color: rgb(31, 31, 36);
+    color: rgb(145, 144, 144);
+}
+
+.icon {
+    color: white;
+}

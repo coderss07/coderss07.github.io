@@ -111,6 +111,8 @@
     #navbar li a { font-size: 14px; padding: 3px 8px; letter-spacing: 0.2px; }
     #cross { margin-left: 140px; }
 
+    .mode { right: 5px; }
+
     .info { padding-right: 0px; height: 86vh;}
     .first-page { flex-direction: column; }
     .intro { height: 100%; margin-left: 20px; padding-left: 10px; }
@@ -188,6 +190,7 @@
     
     #cross { margin-left: 125px; }
 
+    .mode { right: -7px; margin-top: -9px}
     .box> h2 { font-size: 1.1rem; }
 
     .project-container { display: flex; flex-direction: column; }
