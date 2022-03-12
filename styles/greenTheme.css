@@ -6,6 +6,7 @@ body {
 .line {
     background-color: rgb(0, 0, 0);
     height: 3px;
+    border-color: black;
 }
 
 .sidebar {
@@ -53,7 +54,7 @@ body {
 .dropdown-content {
     background-color: rgb(0, 163, 0);
     min-width: 90px;
-    box-shadow: 2px 5px 15px rgb(255, 255, 255);
+    box-shadow: 2px 5px 15px rgb(0, 0, 0);
     z-index: 4;
 }
 
