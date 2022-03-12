@@ -4,11 +4,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="og:image" content="images/icon.jpeg" />
+	<meta name="og:image" content="images/icon.jpeg"/>
 	<title>Sarthak Sharma - Competitive Programmer, Developer</title>
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/all.css">
 	<link rel="stylesheet" href="styles/media.css">
+	<link id="theme-link" rel="stylesheet" href="styles/lightTheme.css">
 	<link rel="icon" type="image/jpg" href="images/icon.jpg">
 </head>
 <body>
@@ -16,7 +17,6 @@
 		<div class="sidebar sidebar-go">
 			<div class="ham">
 				<i class="fa-solid fa-circle-arrow-left fa-2xl" id="cross"></i>
-				<!-- <i class="fa-regular fa-2xl fa-xmark" id="cross"></i> -->
 			</div>
 			<div id="profile">
 				<img src="images/profile.png" alt="">
@@ -37,12 +37,22 @@
 			<div class="ham">
 				<i class="fa-2xl fa-solid fa-bars" id="menu"></i>
 			</div>
+			<div class="mode">
+				<i id="theme-icon" class="fa-2xl fa-solid fa-brush"></i>
+				<!-- <i class="fa-2xl fa-solid fa-palette"></i> -->
+				<div class="dropdown-content">
+					<a onclick="change_theme('light-mode')" id="light">Light</a>
+					<a onclick="change_theme('dark-mode')" id="dark">Dark</a>
+					<a onclick="change_theme('blue-mode')" id="blue">Blue</a>
+					<a onclick="change_theme('green-mode')" id="green">Green</a>
+				</div>
+			</div>
 			<div class="info">
 				<div class="first-page">
 					<div class="intro">
 						<div id="hello" data-aos="fade-up">Hi,</div>
-						<div id="name">I am <b>Sarthak Sharma<b></b></div>
-						<div id="passion">Competitive Programmer / Web Developer</div>
+						<div id="name">I am <b>Sarthak Sharma</b></div>
+						<div id="passion">'Competitive Programmer / Web Developer'</div>
 						<div id="resume">
 							<button class="btn" type="submit">Download Resume</button>
 						</div>
@@ -55,69 +65,70 @@
 			<div id="scroll-bar">
 				<a href="#about"><i id="scroll" class="scroll fa-2xl fa-solid fa-angles-down"></i></a>
 			</div>
-			<div class="box reveal" id="about">
-				<h2>ABOUT ME</h2>
-				<hr class="underline" style="width: 12%;">
-				<div id="self" class="reveal"> 
-					Hello, My name is <b>Sarthak Sharma</b>, I am currently pursuing Bachelor of Technology from Graphic Era Hill University, Bhimtal with Computer Science and Engineering of batch (2019 - 2023). 
+			<div class="all-box">
+				<div class="box reveal" id="about">
+					<h2>ABOUT ME</h2>
+					<hr class="underline" style="width: 12%;">
+					<div id="self" class="reveal"> 
+						Hello, My name is <b>Sarthak Sharma</b>, I am currently pursuing Bachelor of Technology from Graphic Era Hill University, Bhimtal with Computer Science and Engineering of batch (2019 - 2023). 
+					</div>
+					<div id="more-about" class="reveal">
+						<ul>
+							<li class="reveal">I have a good problem Solving Ability.</li>
+							<li class="reveal">I am a member of Coding Club (WeCode) in our college and their I am
+								teaching a concepts for competitive programming with c++.</li>
+							<li class="reveal">I am good in C++ programming language.</li>
+							<li class="reveal">I am confident, hardworking and have a never - say - die attitude.</li>
+							<li class="reveal">I am a good team player.</li>
+							<li class="reveal">I am currently learning Web Development.</li>
+							<li class="reveal">Excellent capability to explore, learn and understand newer business domains and technology.</li>
+						</ul>
+					</div>
 				</div>
-				<div id="more-about" class="reveal">
-					<ul>
-						<li class="reveal">I have a good problem Solving Ability.</li>
-						<li class="reveal">I am a member of Coding Club (WeCode) in our college and their I am
-							teaching a concepts for competitive programming with c++.</li>
-						<li class="reveal">I am good in C++ programming language.</li>
-						<li class="reveal">I am confident, hardworking and have a never - say - die attitude.</li>
-						<li class="reveal">I am a good team player.</li>
-						<li class="reveal">I am currently learning Web Development.</li>
-						<li class="reveal">Excellent capability to explore, learn and understand newer business domains and technology.</li>
-					</ul>
+				<div id="up-arrow-1">
+					<a href="#home"><i class="scroll fa-2xl fa-solid fa-angles-up"></i>
+						<span class="scroll">BACK TO TOP</span>
+					</a>
 				</div>
-			</div>
-			<div id="up-arrow-1">
-				<a href="#home"><i class="scroll fa-2xl fa-solid fa-angles-up"></i>
-					<span class="scroll">BACK TO TOP</span>
-				</a>
-			</div>
-			<hr class="line reveal">
-			<div class="box reveal" id="skills">
-				<h2>SKILLS</h2>
-				<hr class="underline" style="width: 6%;">					
-			</div>
-			<hr class="line reveal">
-			<div class="box reveal" id="projects">
-				<h2>PROJECTS</h2>
-				<hr class="underline" style="width: 12%;">
-				<div id="tmp" class="project-container"></div>
-			</div>
-			<hr class="line reveal">
-			<div class="box reveal" id="achievements">
-				<h2>ACHIEVEMENTS</h2>
-				<hr class="underline" style="width: 23%;">
-				<div class="reveal achievement-container"></div>
-				
-			</div>
-			<hr class="line reveal">
-			<div class="box reveal" id="contact">
-				<h2>CONTACT ME</h2>
-				<hr class="underline" style="width: 18%; height: 2px;">
-				<form method="POST" class="reveal" action="" id="my-form">
-					<h4 class="input-head reveal" >I'LL BE GLAD TO ANSWER YOUR QUESTIONS</h4>
-					<input id="name-input" class="input-box reveal" type="name" placeholder="Name" required>
-					<input id="email-input" class="input-box reveal" type="email" placeholder="Email Address (i.e. abc@example.com)" required>
-					<input id="subject-input" class="input-box reveal" type="subject" placeholder="Subject" required>
-					<textarea class="input-box reveal" name="" id="message" cols="30" rows="10" required placeholder="Your Message..."></textarea>
-					<button class="reveal contact-btn" type="submit">Send Message</button>
-				</form>
-			</div>
-			<div id="up-arrow-2">
-				<a href="#home"><i class="scroll fa-2xl fa-solid fa-angles-up"></i>
-					<span class="scroll">BACK TO TOP</span>
-				</a>
+				<hr class="line reveal">
+				<div class="box reveal" id="skills">
+					<h2>SKILLS</h2>
+					<hr class="underline" style="width: 6%;">					
+				</div>
+				<hr class="line reveal">
+				<div class="box reveal" id="projects">
+					<h2>PROJECTS</h2>
+					<hr class="underline" style="width: 12%;">
+					<div id="tmp" class="project-container"></div>
+				</div>
+				<hr class="line reveal">
+				<div class="box reveal" id="achievements">
+					<h2>ACHIEVEMENTS</h2>
+					<hr class="underline" style="width: 20%; height: 2px;">
+					<div class="reveal achievement-container"></div>
+					
+				</div>
+				<hr class="line reveal">
+				<div class="box reveal" id="contact">
+					<h2>CONTACT ME</h2>
+					<hr class="underline" style="width: 18%; height: 2px;">
+					<form method="POST" class="reveal" action="" id="my-form">
+						<h4 class="input-head reveal" >I'LL BE GLAD TO ANSWER YOUR QUESTIONS</h4>
+						<input id="name-input" class="input-box reveal" type="name" placeholder="Name" required>
+						<input id="email-input" class="input-box reveal" type="email" placeholder="Email Address (i.e. abc@example.com)" required>
+						<input id="subject-input" class="input-box reveal" type="subject" placeholder="Subject" required>
+						<textarea class="input-box reveal" name="" id="message" cols="30" rows="10" required placeholder="Your Message..."></textarea>
+						<button class="reveal contact-btn" type="submit">Send Message</button>
+					</form>
+				</div>
+				<div id="up-arrow-2">
+					<a href="#home"><i class="scroll fa-2xl fa-solid fa-angles-up"></i>
+						<span class="scroll">BACK TO TOP</span>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
-
 	<div id="new-line"></div>
 </body>
 <script src="index.js"></script>
@@ -139,6 +150,12 @@
 		</li>
 		<li class="icon-bw reveal">
 			<a href="mailto: sarthaksharma0709@gmail.com" target="_blank"><i class="icon fa-xl fa-solid fa-envelope"></i></a>
+		</li>
+		<li class="icon-bw reveal">
+			<a href="https://msng.link/o/?Sarthu_SS07=tg" target="_blank"><i class="icon fa-xl fa-brands fa-telegram"></i></a>
+		</li>
+		<li class="icon-bw reveal">
+			<a href="https://wa.link/yuored" target="_blank"><i class="icon fa-xl fa-brands fa-whatsapp-square"></i></a>
 		</li>
 	</ul>
 	<div class="foot-content reveal">

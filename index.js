@@ -50,7 +50,7 @@ fetch("/skills_data.json").then(response => response.json()).then(resp => {
 				</div>
 			</div>`;
 		}
-		skillContent += `<div class="skill-package">${ele}</div>`;
+		skillContent += `<div class="reveal skill-package">${ele}</div>`;
 	}
 	skills_obj.innerHTML = skillContent;
 })
@@ -80,7 +80,7 @@ fetch("/project_data.json").then(response => response.json()).then(resp => {
 		projectDescription += ('\n' + des);
 	})
 	project_info.innerHTML = projectDescription;
-	console.log(project_info.innerHTML);
+	// console.log(project_info.innerHTML);
 })
 
 fetch("/project_data.json").then(response => response.json()).then(resp => {
@@ -89,9 +89,7 @@ fetch("/project_data.json").then(response => response.json()).then(resp => {
 	resp.data.forEach(element => {
 		let id = element.id;
 		let title = element.title;
-		let description = element.description;
 		let imageURL = element.imageURL;
-		let url = element.url;
 
 		let ele = `<div class="reveal project-box">
 						<h3 class="reveal">${title}</h3>
@@ -104,12 +102,12 @@ fetch("/project_data.json").then(response => response.json()).then(resp => {
 })
 
 //  Open Modal
-var body = document.getElementsByTagName('body');
+var body = document.querySelector('body');
 var container = document.getElementById('main');
 
 function open_window(id) {
 	var modal = document.getElementById(id);
-	modal.className = "Modal is-visuallyHidden";
+	modal.className = "Modal is-visuallyHidden theme";
 	setTimeout(function() {
 		container.className = "main-box is-blurred";
 		modal.className = "Modal";
@@ -120,7 +118,7 @@ function open_window(id) {
 function close_modal(id) {
 	var modal = document.getElementById(id);
 	setTimeout(() => {
-		modal.className = "Modal is-hidden is-visuallyHidden";
+		modal.className = "Modal is-hidden is-visuallyHidden theme";
 		body.className = "";
 		container.className = "main-box";
 		container.parentElement.className = "";
@@ -220,18 +218,31 @@ function sendEmail(name, email, subject, message) {
 	}).then((message) => alert('Message Sent Successfully...'));
 }
 
-// $(function () {
-// 	$('#button').click(function () {
-// 	  $('.modal').addClass('open');
-  
-// 	  if ($('.modal').hasClass('open')) {
-// 		$('.cont').addClass('blur');
-// 	  }
-// 	});
-  
-// 	$('.close').click(function () {
-// 	  $('.modal').removeClass('open');
-// 	  $('.cont').removeClass('blur');
-// 	});
-//   });
+// Change Themes
 
+const originalTheme = [];
+
+function change_theme(mode) {
+    var theme = document.querySelector('#theme-link');
+	if(mode == 'dark-mode') {
+		theme.href = "styles/darkTheme.css";
+	}else if(mode == 'blue-mode') {
+		theme.href = "styles/blueTheme.css";
+	}else if(mode == 'green-mode') {
+		theme.href = "styles/greenTheme.css";
+	}else if(mode == 'light-mode') {
+		theme.href = "styles/lightTheme.css";
+	}
+}
+
+var theme_obj = document.querySelector('#theme-link');
+
+if(theme_obj.href == "styles/lightTheme.css") {
+	var mode = document.getElementById('light');
+	mode.style.backgroundColor = 'black';
+	mode.style.color = 'white';
+}else if(theme_obj.href == "styles/darkTheme.css") {
+	var mode = document.getElementById('dark');
+	mode.style.backgroundColor = 'black';
+	mode.style.color = 'white';
+}
