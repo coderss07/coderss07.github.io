@@ -24,15 +24,15 @@ body {
 }
 
 .info::before {
-    opacity: 70%;
+    opacity: 80%;
 }
 
 #menu:hover {
-    color: rgb(199, 199, 199);
+    color: rgb(255, 255, 255);
 }
 
 #cross:hover {
-    color: rgb(158, 158, 243);
+    color: rgb(255, 255, 255);
 }
 
 .mode i {
@@ -73,16 +73,28 @@ body {
     text-shadow: 0px 0px 15px;
 }
 
+.all-box::before {
+	content: "";
+    background: url("../images/white2.jpg") repeat fixed;
+    position: fixed;
+    z-index: -4;
+    top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+    opacity: 25%;
+}
+
 .box> h2 { 
     color: black;
 }
 
 #self {
-    color: rgb(73, 72, 72);
+    color: rgb(36, 36, 36);
 }
 
 #more-about li {
-    color: rgb(73, 72, 72);
+    color: rgb(27, 27, 27);
 }
 
 .skill-package {
@@ -104,6 +116,7 @@ body {
 }
 
 .project-box {
+    background-color: white;
     box-shadow: 3px 3px 15px black;
 }
 

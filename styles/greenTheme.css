@@ -79,7 +79,7 @@ body {
 .all-box::before {
 	content: "";
     background: url("../images/green.jpg") repeat fixed;
-    background-size: contain;
+    /* background-size: ; */
     position: fixed;
     z-index: -4;
     top: 0px;

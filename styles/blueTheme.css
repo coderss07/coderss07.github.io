@@ -70,14 +70,14 @@ body {
 .all-box::before {
 	content: "";
     background: url("../images/blue.jpg") repeat fixed;
-    background-size: cover;
+    /* background-size: cover; */
     position: fixed;
     z-index: -4;
     top: 0px;
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
-    opacity: 30%;
+    opacity: 35%;
 }
 
 .box> h2 { 
