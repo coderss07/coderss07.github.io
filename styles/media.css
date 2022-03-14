@@ -16,7 +16,7 @@
     #navbar li a { font-size: 15px; padding: 3px 8px; letter-spacing: 0.2px; }
     #cross { margin-left: 155px; }
 
-    .mode { width: 80px; right: 15px; }
+    .mode { width: 80px; right: 22px; }
 
     .info { padding-right: 0px; height: 90vh; }
     .first-page { flex-direction: column; justify-content: center;}
@@ -118,7 +118,7 @@
         font-size: 24px;
     }
 
-    .mode { width: 80px; right: 10px; }
+    .mode { width: 80px; right: 18px; }
 
     .info { padding-right: 0px; height: 86vh;}
     .first-page { flex-direction: column; }
