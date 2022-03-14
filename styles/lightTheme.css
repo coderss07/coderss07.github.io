@@ -11,7 +11,7 @@ body {
 
 .sidebar {
     background-color: rgb(194, 194, 194);
-    box-shadow: 2px 0 8px rgb(73, 22, 22);
+    box-shadow: 5px 5px 8px rgb(31, 31, 31);
 }
 
 #navbar li a {
@@ -23,16 +23,24 @@ body {
     color: white;
 }
 
-.info::before {
-    opacity: 80%;
+.info::after {
+    z-index: -1;
+    content: "";
+    background: rgba(255, 255, 255, 0.322);
+    background-size: cover;
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	right: 0px;
+	bottom: -90px;
 }
 
 #menu:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(77, 89, 156);
 }
 
 #cross:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(77, 89, 156);
 }
 
 .mode i {
@@ -40,7 +48,7 @@ body {
 }
 
 .mode i:hover {
-    color: white;
+    color: rgb(77, 89, 156);
 }
 
 .dropdown-content {
@@ -60,29 +68,29 @@ body {
 }
   
 .dropdown-content a:hover {
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(82, 82, 82);
     color: white;
 }
 
-#name, #passion { 
-    color: black;
+#name, #passion, #hello { 
+    color: rgb(0, 0, 0);
 }
 
 #name b {
-    color: rgb(179, 0, 0);
-    text-shadow: 0px 0px 15px;
+    color: #c01d00;
+    text-shadow: 0px 0px 3px;
 }
 
 .all-box::before {
 	content: "";
-    background: url("../images/white.jpg") repeat fixed;
+    background: url("../images/white.jpg") repeat;
     position: fixed;
     z-index: -4;
     top: 0px;
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
-    opacity: 25%;
+    opacity: 30%;
 }
 
 .box> h2 { 

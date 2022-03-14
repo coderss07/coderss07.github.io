@@ -11,7 +11,7 @@ body {
 
 .sidebar {
     background-color: rgb(0, 59, 0);
-    box-shadow: 5px 0 8px rgb(0, 0, 0);
+    box-shadow: 5px 5px 8px rgb(0, 0, 0);
 }
 
 .sidebar h2{ 
@@ -27,8 +27,20 @@ body {
     color: rgb(0, 27, 1);
 }
 
-.info::before {
-    opacity: 80%;
+#navbar li>i {
+    color: white;
+}
+
+.info::after {
+    z-index: -1;
+    content: "";
+    background: rgba(30, 255, 0, 0.178);
+    background-size: cover;
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	right: 0px;
+	bottom: -90px;
 }
 
 #menu:hover {
@@ -67,7 +79,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-#name, #passion { 
+#name, #passion, #hello { 
     color: rgb(0, 0, 0);
 }
 

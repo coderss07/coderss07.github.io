@@ -9,8 +9,8 @@ body {
 }
 
 .sidebar {
-    background-color: rgb(132, 0, 255);
-    box-shadow: 5px 0 8px rgb(204, 204, 204);
+    background-color: rgb(45, 0, 87);
+    box-shadow: 5px 5px 8px rgb(204, 204, 204);
 }
 
 #navbar li a {
@@ -26,8 +26,16 @@ body {
     color: rgb(141, 141, 141);
 }
 
-.info::before {
-    opacity: 80%;
+.info::after {
+    z-index: -1;
+    content: "";
+    background: rgba(0, 0, 255, 0.295);
+    background-size: cover;
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	right: 0px;
+	bottom: -90px;
 }
 
 #cross:hover {
@@ -58,12 +66,12 @@ body {
     color: rgb(255, 255, 255);
 }
 
-#name, #passion { 
-    color: white;
+#name, #passion, #hello { 
+    color: rgb(255, 255, 255);
 }
 
 #name b {
-    color: #fa8f51;
+    color: #ff2600;
     text-shadow: 0px 0px 3px;
 }
 
@@ -77,7 +85,7 @@ body {
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
-    opacity: 35%;
+    opacity: 40%;
 }
 
 .box> h2 { 

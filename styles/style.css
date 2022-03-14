@@ -8,6 +8,7 @@
 
 html {
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 .line {
@@ -40,7 +41,6 @@ html {
 /* Side bar styling */
 
 .sidebar {
-    padding-right: 10px;
     height: 100vh;
     position: -webkit-sticky;
     position: sticky;
@@ -60,7 +60,7 @@ html {
 
 #profile {
     margin-top: 30px;
-    margin-left: 22px;
+    margin-left: 32px;
 }
 
 #profile img {
@@ -70,27 +70,39 @@ html {
 
 .sidebar h2 {
     margin-top: 5px;
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 #navbar {
-    padding: 30px;  
+    padding: 15px;  
 }
 
 #navbar li {
+    align-items: center;
+    display: flex;
+    /* border: 0.5px solid black; */
     list-style: none;
-    padding: 10px 0;
+    padding: 3px 0;
+    width: 198px;
 }
 
 #navbar li a {
+    /* border: 0.5px solid red; */
+    margin-right: 3px;
+    width: fit-content;
+    display: flow-root;
     font-family: 'Righteous', cursive;
     font-weight: 25px;
     text-decoration: none;
     color: black;
     font-size: 1.3rem;
-    padding: 5px 10px;
+    padding: 7px 10px;
+    border-radius: 6px;
     letter-spacing: 0.5px;
-    border-radius: 4px;
+}
+
+#active-arrow-0, #active-arrow-2, #active-arrow-1, #active-arrow-3, #active-arrow-4, #active-arrow-5 {
+    display: none;
 }
 
 .ham {
@@ -107,15 +119,16 @@ html {
 
 #cross {
     margin-top: 5px;
-    margin-left: 175px;
+    margin-left: 193px;
     position: absolute;
 }
 
 .mode {
     /* border: 2px solid red; */
+    margin-top: -4px;
     width: 100px;
     height: 35px;
-    right: 10px;
+    right: 5px;
     cursor: pointer;
     z-index: 3;
     float: right;
@@ -123,18 +136,9 @@ html {
 }
 
 .mode i {
-    margin-left: 58px;
-    margin-right: 3px;
+    margin-left: 65px;
     z-index: 1;
 }
-
-#dark-icon {
-    display: none;
-}
-
-/* #light-icon {
-    display:none;
-} */
 
 .dropdown-content {
     display: none;
@@ -174,7 +178,6 @@ html {
     height: 88vh;
     position: relative;
     align-items: center;
-
 }
 
 .info::before {
@@ -187,6 +190,11 @@ html {
 	left: 0px;
 	right: 0px;
 	bottom: -90px;
+    -webkit-filter: blur(2.5px);
+    -moz-filter: blur(2.5px);
+    -o-filter: blur(2.5px);
+    -ms-filter: blur(2.5px);
+    filter: blur(2.5px);
 }
 
 .first-page {
@@ -329,7 +337,7 @@ html {
 }
 
 #about div {
-    margin: 50px;
+    margin: 30px 50px;
 }
 
 #self {
@@ -338,6 +346,7 @@ html {
     text-align: center;
     font-size: 1.3rem;
     letter-spacing: 0.9px;
+    user-select: none;
 }
 
 #more-about {
@@ -366,6 +375,10 @@ html {
 }
 
 /* Skill Section Styling */
+
+#case {
+    margin-top: 170px;
+}
 
 #skills {
     /* border: 1px solid black; */
@@ -655,9 +668,9 @@ html {
     top: 80vh;
     bottom: 500px;
     z-index: 2;
-    margin-top: -200px;
+    margin-top: -250px;
     /* margin-bottom: 150px; */
-    margin-bottom: clamp(100px, 25vw, 0px);;
+    margin-bottom: clamp(100px, 25vw, 0px);
     /* border: 2px solid black; */
 }
 
@@ -709,5 +722,3 @@ html {
 .foot-content {
     margin: 5px 0;
 }
-
-

@@ -10,7 +10,7 @@ body {
 
 .sidebar {
     background-color: black;
-    box-shadow: 5px 0 8px rgb(204, 204, 204);
+    box-shadow: 5px 5px 8px rgb(204, 204, 204);
 }
 
 #navbar li a {
@@ -22,8 +22,16 @@ body {
     color: black;
 }
 
-.info::before {
-    opacity: 80%;
+.info::after {
+    z-index: -1;
+    content: "";
+    background: rgba(0, 0, 0, 0.322);
+    background-size: cover;
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	right: 0px;
+	bottom: -90px;
 }
 
 #menu:hover {
@@ -54,17 +62,17 @@ body {
 }
   
 .dropdown-content a:hover {
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(202, 202, 202);
     color: black;
 }
 
-#name, #passion { 
-    color: white;
+#name, #passion, #hello { 
+    color: rgb(255, 255, 255);
 }
 
 #name b {
-    color: rgb(255, 92, 92);
-    text-shadow: 0px 0px 2px;
+    color: #ff2600;
+    text-shadow: 0px 0px 3px;
 }
 
 .box> h2 { 
@@ -80,7 +88,7 @@ body {
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
-    opacity: 50%;
+    opacity: 40%;
 }
 
 #self {
@@ -180,7 +188,7 @@ body {
 }
 
 #foot {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(15, 15, 15);
     color: rgb(233, 233, 233);
 }
 

@@ -12,13 +12,15 @@
         box-shadow: 3px 3px 8px rgb(73, 22, 22);
     }
     .sidebar h2 { font-size: 20px }
-    #navbar li { padding: 5px 0; }
+    #navbar li { width: 160px; padding: 5px 0; }
     #navbar li a { font-size: 15px; padding: 3px 8px; letter-spacing: 0.2px; }
-    #cross { margin-left: 145px; }
+    #cross { margin-left: 155px; }
+
+    .mode { width: 80px; right: 15px; }
 
     .info { padding-right: 0px; height: 90vh; }
     .first-page { flex-direction: column; justify-content: center;}
-    .intro { width: 70%; height: 250px; margin-left: 30px; padding-left: 10px; }
+    .intro { width: 380px; height: 250px; margin-left: 30px; padding-left: 10px; }
     
     .intro div { padding: 4px; }
     #hello { font-weight: bold; font-size: 3rem; }
@@ -37,6 +39,7 @@
     #self { font-size: 12px; width: 75%;}
     #more-about { font-size: 11px; margin: 20px 0; letter-spacing: 0.4px; width: 75%;}
 
+    #case { margin-top: 0px; }
     .skill-package {padding: 10px 15px; margin: 15px 0; width: 60%;}
     .skill-name { font-size: 12px; margin: 5px 0; letter-spacing: 0.7px;}
     .skill-value { margin-left: auto; font-size: 12px; letter-spacing: 0.7px;}
@@ -56,7 +59,7 @@
     .project-info h2 { font-size: 1.3rem; }
     .project-description { font-size: 12px; }
     .project-info h2, p, button {margin: 6px 0}
-    .Modal {padding-top: 130px;}
+    .Modal {padding-top: 100px;}
     .Close {font-size: 12px}
 
     .achievement-box {width: 300px;}
@@ -74,19 +77,19 @@
     #up-arrow-2 a {font-size: 15px; margin: 25px 0;}
 
     #foot { height: 250px; }
-    .social-media {width: 150px; height: 30px;}
+    .social-media {width: 200px; height: 30px;}
     .icon { font-size: 15px; margin: 5px auto;}
     .foot-content { font-size: 12px; margin: 3px 0; }
 }
 
 @media (max-width: 560px) {
     .info { height: 87vh;}
-    .intro { height: 80%; margin-left: 20px; padding-left: 10px; }
+    .intro {width: 360px; height: 80%; margin-left: 30px; padding-left: 10px; }
     
-    #hello { font-weight: bold; font-size: 30px; }
-    #name { font-size: 22px; }
-    #name b { font-size: 22px; }
-    #passion { font-size: 14px; }
+    #hello { font-weight: bold; font-size: 45px; }
+    #name { font-size: 30px; }
+    #name b { font-size: 32px; }
+    #passion { font-size: 20px; }
     .btn { height: 28px; font-size: 10px; }
 
     #up-arrow-1 { display: none;}
@@ -103,25 +106,30 @@
         position: -webkit-fixed;
         position: fixed;
         z-index: 3;
-        height: 450px;
+        height: 460px;
         box-shadow: 3px 3px 8px rgb(73, 22, 22);
     }
     .sidebar h2 { font-size: 20px }
-    #navbar li { padding: 4px 0; }
+    #navbar li { width: 148px; padding: 4px 0; }
     #navbar li a { font-size: 14px; padding: 3px 8px; letter-spacing: 0.2px; }
-    #cross { margin-left: 140px; }
+    #cross { margin-left: 143px; }
 
-    .mode { right: 5px; }
+    #active-arrow-0, #active-arrow-2, #active-arrow-1, #active-arrow-3, #active-arrow-4, #active-arrow-5 { 
+        font-size: 24px;
+    }
+
+    .mode { width: 80px; right: 10px; }
 
     .info { padding-right: 0px; height: 86vh;}
     .first-page { flex-direction: column; }
-    .intro { height: 100%; margin-left: 20px; padding-left: 10px; }
+    .intro { width: 280px; height: 100%; margin-left: 0px; padding-left: 10px; }
     
     .intro div { padding: 2px; }
-    #hello { font-weight: bold; font-size: 25px; }
-    #name { font-size: 10px; }
-    #name b { font-size: 14px; }
-    #passion { font-size: 9px; }
+    #hello { font-weight: bold; font-size: 35px; }
+    #name { font-size: 24px; }
+    #name b { font-size: 25px; }
+    #passion { font-size: 15px; }
+    
     .btn { height: 24px; font-size: 8px; }
 
     .bitmoji { margin-right: 20px; }
@@ -134,6 +142,7 @@
     #self { font-size: 10px; width: 75%;}
     #more-about { font-size: 11px; margin: 20px auto; letter-spacing: 0.4px; width: 75%; }
 
+    #case { margin-top: 0px; }
     .skill-package {padding: 6px 10px; margin: 10px 0;}
     .skill-name { font-size: 10px; margin: 3px 0; letter-spacing: 0.5px;}
     .skill-value { margin-left: auto; font-size: 10px; font-size: 10px; letter-spacing: 0.5px;}
@@ -153,7 +162,7 @@
     .project-info h2 { font-size: 1.2rem; }
     .project-description { font-size: 10px; }
     .project-info h2, p, button {margin: 5px 0}
-    .Modal {padding-top: 100px;}
+    .Modal {padding-top: 80px;}
     .Close {font-size: 12px}
 
     .achievement-container {width: 100%;}
@@ -172,9 +181,17 @@
     #up-arrow-2 a {font-size: 11px; margin: 10px 0;}
 
     #foot { height: 200px; }
-    .social-media {width: 150px; height: 30px;}
-    .icon { font-size: 15px; margin: 5px auto;}
+    .social-media {width: 180px; height: 30px;}
+    .icon { font-size: 15px; margin: 10px auto;}
     .foot-content { font-size: 12px; margin: 3px 0; }
+}
+
+@media (max-width: 360px) {
+    .intro { width: 220px; margin-left: 0px; padding-left: 10px; }
+    #hello { width: 100%;font-weight: bold; font-size: 32px; }
+    #name { font-size: 17px; }
+    #name b { font-size: 18px; }
+    #passion { font-size: 12px; }
 }
 
 @media (max-width: 324px) {
@@ -182,13 +199,20 @@
         height: 400px;
         width: 150px;
     }
+    i.fa-2xl { font-size: 25px;}
+
     .sidebar h2 { font-size: 13px }
-    #navbar li { padding: 3px 0; }
+    #navbar li { width: 105px; padding: 3px 0; }
     #navbar li a { font-size: 10px; padding: 2px 5px; letter-spacing: 0.1px; }
     #profile { margin-left: 30px; }
     #profile img { height: 60px;}
+
+    #active-arrow-0, #active-arrow-2, #active-arrow-1, #active-arrow-3, #active-arrow-4, #active-arrow-5 { 
+        font-size: 18px;
+    }
     
-    #cross { margin-left: 125px; }
+    #cross { margin-top: 0px; margin-left: 122px; }
+    .mode { width: 90px; }
 
     .mode { right: -7px; margin-top: -9px}
     .box> h2 { font-size: 1.1rem; }
@@ -207,7 +231,7 @@
     .project-info h2 { font-size: 15px; }
     .project-description { font-size: 10px; }
     .project-info h2, p, button {margin: 5px 0}
-    .Modal {padding-top: 100px;}
+    .Modal {padding-top: 80px;}
     .Close {font-size: 12px}
 }
 
@@ -219,6 +243,12 @@
     .bitmoji { margin-right: 5px; }
     .bitmoji img { height: 130px; }
     .info { padding-right: 0px; height: 83vh;}
+
+    .intro { width: 180px; margin-left: 0px; padding-left: 10px; }
+    #hello { width: 100%;font-weight: bold; font-size: 25px; }
+    #name { font-size: 10px; }
+    #name b { font-size: 14px; }
+    #passion { font-size: 9px; }
 
     .skill-box { margin: 7px 0;}
     .skill-name { font-size: 7px; margin-top: 7px; margin-bottom: 0; letter-spacing: 0.2px;}
@@ -245,5 +275,4 @@
 
 @media (max-width: 282px) {
     .Modal {padding-top: 50px;}
-    i.fa-2xl { font-size: 25px;}
 }

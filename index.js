@@ -190,14 +190,12 @@ window.addEventListener("scroll", reveal);
 
 // Contact through Mail
 
-var data_js = { "access_token": "g2y6ytjwdn3hpfol9vh01f09" };
-
 function js_send() {
 	var request = new XMLHttpRequest();
 	request.onreadystatechange = function() {
-		if (request.readyState == 4 && request.status == 200) {
+		if(request.readyState == 4 && request.status == 200) {
 			alert("Message Sent Successfully...");
-		} else if(request.readyState == 4) {
+		}else if(request.readyState == 4) {
 			alert("Message not sent. Check Your Connection...");
 		}
 	};
@@ -205,12 +203,14 @@ function js_send() {
 	let email = document.querySelector("#email-input").value;
 	let subject = document.querySelector("#subject-input").value;
 	let message = document.querySelector("#message").value;
-	document.getElementById("my-form").reset();
-	
+	setTimeout(() => {
+		document.getElementById("my-form").reset();
+	}, 500);
+	var data_js = { "access_token": "g2y6ytjwdn3hpfol9vh01f09" };
 	data_js['extra_from'] = name;
 	data_js["extra_sender's_email"] = email;
 	data_js['subject'] = subject;
-	data_js['text'] ="Message: " + message;
+	data_js['text'] = "Message: " + message;
 	var params = toParams(data_js);
 	
 	request.open("POST", "https://postmail.invotes.com/send", true);
@@ -238,18 +238,46 @@ js_form.addEventListener("submit", function (e) {
 
 // Change Themes
 
-const originalTheme = [];
+var themes_obj = ['#light', '#dark', '#blue', '#green'];
+
+document.querySelector(themes_obj[0]).style.backgroundColor = 'black';
+document.querySelector(themes_obj[0]).style.color = 'white';
 
 function change_theme(mode) {
 	var theme = document.querySelector('#theme-link');
 	if(mode == 'dark-mode') {
 		theme.href = "styles/darkTheme.css";
+		for(var i = 0; i < 4; i++) {
+			document.querySelector(themes_obj[i]).style.backgroundColor = null;
+			document.querySelector(themes_obj[i]).style.color = null;
+		}
+		document.querySelector(themes_obj[1]).style.backgroundColor = 'white';
+		document.querySelector(themes_obj[1]).style.color = 'black';
+		
 	}else if(mode == 'blue-mode') {
 		theme.href = "styles/blueTheme.css";
+		for(var i = 0; i < 4; i++) {
+			document.querySelector(themes_obj[i]).style.backgroundColor = null;
+			document.querySelector(themes_obj[i]).style.color = null;
+		}
+		document.querySelector(themes_obj[2]).style.backgroundColor = 'black';
+		document.querySelector(themes_obj[2]).style.color = 'white';
 	}else if(mode == 'green-mode') {
 		theme.href = "styles/greenTheme.css";
+		for(var i = 0; i < 4; i++) {
+			document.querySelector(themes_obj[i]).style.backgroundColor = null;
+			document.querySelector(themes_obj[i]).style.color = null;
+		}
+		document.querySelector(themes_obj[3]).style.backgroundColor = 'black';
+		document.querySelector(themes_obj[3]).style.color = 'white';
 	}else if(mode == 'light-mode') {
 		theme.href = "styles/lightTheme.css";
+		for(var i = 0; i < 4; i++) {
+			document.querySelector(themes_obj[i]).style.backgroundColor = null;
+			document.querySelector(themes_obj[i]).style.color = null;
+		}
+		document.querySelector(themes_obj[0]).style.backgroundColor = 'black';
+		document.querySelector(themes_obj[0]).style.color = 'white';
 	}
 }
 
@@ -264,3 +292,27 @@ if(theme_obj.href == "styles/lightTheme.css") {
 	mode.style.backgroundColor = 'black';
 	mode.style.color = 'white';
 }
+
+// To active sidebar tags
+
+var sidebar_ids = ['#home', '#about', '#skills', '#projects', '#achievements', '#contact'];
+
+document.querySelector(`#active-arrow-0`).style.display = 'inline';
+document.querySelector(`${sidebar_ids[0]}-href`).style.backgroundImage = 'linear-gradient(to right, red, orange)';
+document.querySelector(`${sidebar_ids[0]}-href`).style.color = 'white';
+
+window.addEventListener('scroll', (event) => {
+	for(let i = 0; i < 6; i++) {
+		var topPosition = document.querySelector(sidebar_ids[i]).getBoundingClientRect().top;
+		if(topPosition <= 200) {
+			for(var j = 0; j < 6; j++) {
+				document.querySelector(`#active-arrow-${j}`).style.display = 'none';
+				document.querySelector(`${sidebar_ids[j]}-href`).style.backgroundImage = null;
+				document.querySelector(`${sidebar_ids[j]}-href`).style.color = null;
+			}
+			document.querySelector(`#active-arrow-${i}`).style.display = 'inline';
+			document.querySelector(`${sidebar_ids[i]}-href`).style.backgroundImage = 'linear-gradient(to right, red, orange)';
+			document.querySelector(`${sidebar_ids[i]}-href`).style.color = 'white';
+		}
+	}
+});
