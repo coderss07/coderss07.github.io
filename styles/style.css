@@ -644,6 +644,7 @@ html {
 }
 
 #message {
+    resize: none;
     height: 130px;
 }
 
