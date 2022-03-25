@@ -54,7 +54,7 @@ html {
 
 .sidebar-go {
     transform: translate(-400px, 0);
-    position: absolute;
+    position: fixed;
     /* display: none; */
 }
 

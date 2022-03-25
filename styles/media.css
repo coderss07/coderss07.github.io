@@ -214,7 +214,7 @@
     #cross { margin-top: 0px; margin-left: 122px; }
     .mode { width: 90px; }
 
-    .mode { right: -7px; margin-top: -9px}
+    .mode { right: 0px; margin-top: -9px; margin-right: 10px;}
     .box> h2 { font-size: 1.1rem; }
 
     .project-container { display: flex; flex-direction: column; }
