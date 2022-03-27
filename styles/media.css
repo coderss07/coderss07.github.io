@@ -91,13 +91,13 @@
     .achievement-box li { font-size: 13px; margin-left: 20px; }
 
     #contact {margin-bottom: -40px;}
-    #my-form { width: 80%; height: 370px; max-width: 500px;}
-    #message { height: 90px; font-size: 10px; }
-    .input-box { margin: 7px auto; height: 20px; font-size: 10px; }
-    .contact-btn {height: 20px; width: 100px; font-size: 10px}
+    #my-form { width: 80%; max-width: 500px;}
+    #message { height: 100px; font-size: 13px; }
+    .input-box { margin: 7px auto; height: 30px; font-size: 13px; }
+    .contact-btn {height: 40px; width: 140px; font-size: 13px}
 
     #up-arrow-1 { display: none;}
-    #up-arrow-2 {display: block; margin-top: 10px;}
+    #up-arrow-2 {display: block; margin-top: 20px;}
     #up-arrow-2 a {font-size: 15px; margin: 25px 0;}
 
     #foot { height: 250px; }
@@ -188,13 +188,13 @@
     .achievement-box li { font-size: 9px; margin-left: 20px; }
 
     #contact { margin-bottom: -200px;}
-    #my-form { width: 85%; height: 240px; padding: 15px 12px;}
+    #my-form { width: 85%; padding: 15px 12px;}
     .input-head { font-size: 10px; margin: 5px 0}
-    #message { height: 80px; font-size: 8px; margin-bottom: 5px; }
-    .input-box { margin: 5px auto; height: 15px; font-size: 8px; }
-    .contact-btn {height: 20px; width: 80px; font-size: 8px}
+    #message { height: 90px; font-size: 11px; margin-bottom: 5px; }
+    .input-box { margin: 5px auto; height: 25px; font-size: 11px; }
+    .contact-btn {height: 25px; width: 100px; font-size: 11px}
 
-    #up-arrow-2 {margin-top: 5px; line-height: 3em;}
+    #up-arrow-2 {margin-top: 40px; line-height: 3em;}
     #up-arrow-2 a {font-size: 11px; margin: 10px 0;}
 
     #foot { height: 200px; }
@@ -271,7 +271,7 @@
     .contact-btn {height: 18px; width: 70px; font-size: 4px}
 
     #up-arrow-2 {margin-top: 2px;}
-    #up-arrow-2 a {font-size: 10px; margin: 8px 0;}
+    #up-arrow-2 a {font-size: 10px; margin: 10px 0;}
 
     #foot { height: 180px; }
     .social-media { height: 20px;}
