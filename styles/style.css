@@ -100,7 +100,7 @@ html {
 .ham {
     display: none;
     flex-direction: column;
-    width: 43px;
+    width: 38px;
     height: 100%;
     cursor: pointer;
     margin-left: 15px;
@@ -110,7 +110,7 @@ html {
   
 .ham span {
     border-radius:10px;
-    height: 6px;
+    height: 4px;
     margin: 3px 0;
     transition: .3s ease-in-out;
     /* transition: .3s cubic-bezier(0.68, -0.6, 0.32, 1.6); */
@@ -146,7 +146,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(2){
 input[type="checkbox"]:checked ~ span:nth-of-type(3){
     transform-origin:bottom;
     width:52%;
-    transform: rotatez(45deg) translate(9px,-18px);
+    transform: rotatez(45deg) translate(8px,-15px);
 }
 
 .mode {
