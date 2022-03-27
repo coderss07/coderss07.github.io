@@ -74,7 +74,7 @@
   vertical-align: 0.05357em; }
 
 .fa-lg {
-  font-size: 1.25em;
+  font-size: 1.22em;
   line-height: 0.05em;
   vertical-align: -0.075em; }
 
@@ -85,6 +85,11 @@
 
 .fa-2xl {
   font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em; }
+
+.fa-3xl {
+  font-size: 2.5em;
   line-height: 0.03125em;
   vertical-align: -0.1875em; }
 

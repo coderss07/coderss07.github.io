@@ -8,22 +8,23 @@ body {
     border-color: white;
 }
 
-.sidebar {
-    background-color: rgb(45, 0, 87);
-    box-shadow: 5px 5px 8px rgb(204, 204, 204);
+.nav-menu {
+    background-color: rgba(55, 0, 107, 0.795);
+    box-shadow: 0px 5px 8px rgb(255, 255, 255);
 }
 
-#navbar li a {
+.navbar {
+    background-color: rgba(55, 0, 107, 0.795);
+    box-shadow: 3px 3px 10px rgb(255, 255, 255);
+}
+
+.navbar li a {
     color: rgb(255, 255, 255);
 }
 
-#navbar li a:hover {
+.navbar li a:hover {
     background-color: white;
-    color: rgb(0, 10, 104);
-}
-
-#menu:hover {
-    color: rgb(141, 141, 141);
+    color: rgb(0, 9, 92);
 }
 
 .info::after {
@@ -38,23 +39,19 @@ body {
 	bottom: -90px;
 }
 
-#cross:hover {
-    color: rgb(141, 141, 141);
+.theme-btn {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
-.mode i {
-    text-shadow: 0 0 30px white;
-}
-
-.mode i:hover {
-    color: rgb(141, 141, 141);
+.mode:hover .theme-btn {
+    background-color: rgb(10, 0, 146);
+    color: rgb(255, 255, 255);
 }
 
 .dropdown-content {
     background-color: #bc2bff;
-    min-width: 90px;
     box-shadow: 2px 5px 15px rgb(255, 255, 255);
-    z-index: 4;
 }
 
 .dropdown-content a {
@@ -62,7 +59,7 @@ body {
 }
   
 .dropdown-content a:hover {
-    background-color: rgb(7, 0, 71);
+    background-color: rgb(55, 0, 107);
     color: rgb(255, 255, 255);
 }
 
@@ -73,6 +70,15 @@ body {
 #name b {
     color: #ff2600;
     text-shadow: 0px 0px 3px;
+}
+
+.btn {
+    background-color: rgb(206, 206, 206);
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
 }
 
 .all-box::before {

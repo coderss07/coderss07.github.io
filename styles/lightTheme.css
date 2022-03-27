@@ -9,16 +9,21 @@ body {
     border-color: black;
 }
 
-.sidebar {
-    background-color: rgb(194, 194, 194);
-    box-shadow: 5px 5px 8px rgb(31, 31, 31);
+.nav-menu {
+    background-color: rgba(255, 255, 255, 0.781);
+    box-shadow: 0 5px 8px rgb(0, 0, 0);
 }
 
-#navbar li a {
+.navbar {
+    background-color: rgba(255, 255, 255, 0.781);
+    box-shadow: 3px 3px 10px black;
+}
+
+.navbar li a {
     color: black;
 }
 
-#navbar li a:hover {
+.navbar li a:hover {
     background-color: black;
     color: white;
 }
@@ -35,32 +40,19 @@ body {
 	bottom: -90px;
 }
 
-#menu:hover {
-    color: rgb(77, 89, 156);
+.theme-btn {
+    color: white;
+    background-color: black;
 }
 
-#cross:hover {
-    color: rgb(77, 89, 156);
-}
-
-.mode i {
-    text-shadow: 0 0 30px white;
-}
-
-.mode i:hover {
-    color: rgb(77, 89, 156);
+.mode:hover .theme-btn {
+    background-color: rgb(216, 216, 216);
+    color: rgb(0, 0, 0);
 }
 
 .dropdown-content {
-    display: none;
-    /* border: 3px solid red; */
-    position: absolute;
-    margin-top: 10px;
-    margin-right: 16px;
     background-color: #d3d3d3;
-    min-width: 90px;
     box-shadow: 2px 5px 15px black;
-    z-index: 4;
 }
 
 .dropdown-content a {
@@ -79,6 +71,15 @@ body {
 #name b {
     color: #c01d00;
     text-shadow: 0px 0px 3px;
+}
+
+.btn {
+    background-color: rgb(206, 206, 206);
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
 }
 
 .all-box::before {
@@ -121,6 +122,7 @@ body {
 
 .progress-bar> div {
     background-image: linear-gradient(to right, rgb(119, 102, 194), rgb(231, 0, 0));
+    color: white;
 }
 
 .project-box {

@@ -2,24 +2,46 @@
     #up-arrow-1 { padding-right: 15px; }
 }
 
+@media (max-width: 1070px) { 
+    .navbar {
+        background-color: white;
+        padding: 0;
+        /* height: 100%; */
+        width: 220px;
+        position: absolute;
+        top: 71px;
+        box-shadow: 0 3px 10px black;
+        transition: transform 0.3s ease-in-out;
+        transform-origin: top;
+    }
+
+    #profile { width: 100%; display: flex; flex-direction: column; margin: 10px 0; }
+    #profile img { height: 82px;}
+    /* #profile img { height: 80px; } */
+    #profile h3 { font-size: 16px }
+    
+    .navbar ul { display: flex; flex-direction: column; align-items: center; margin: 0 auto;}
+    .navbar li { padding: 5px 0; border-radius: 5px; margin: 8px 10px; width: 90%; } 
+    .navbar li a { font-size: 15px; padding: 3px 8px; letter-spacing: 0.2px; }
+
+    .navbar-go { transform: translateX(-300px) skewX(-90deg) }
+    #menu {display: inline;}
+    .mode { position: absolute; right: 10px; }
+
+    .theme-btn {width: 100%; }
+    .dropdown-content { min-width: 100%; }
+}
+
 @media (min-width: 400px) and (max-width: 1000px)  {
     .line {  width: 50%; margin: 10px auto; }
-    .sidebar {
-        position: -webkit-fixed;
-        position: fixed;
-        z-index: 3;
-        height: 500px;
-        box-shadow: 3px 3px 8px rgb(73, 22, 22);
-    }
-    .sidebar h2 { font-size: 20px }
-    #navbar li { width: 160px; padding: 5px 0; }
-    #navbar li a { font-size: 15px; padding: 3px 8px; letter-spacing: 0.2px; }
-    #cross { margin-left: 155px; }
-
-    .mode { width: 80px; right: 22px; }
-
-    .info { padding-right: 0px; height: 90vh; }
-    .first-page { flex-direction: column; justify-content: center;}
+    
+    #profile { width: 130px; }
+    .navbar h2 { font-size: 20px }
+    
+    .mode { margin-right: 15px; }
+    
+    .info { padding-right: 0px; }
+    .first-page { flex-direction: column; justify-content: center; }
     .intro { width: 380px; height: 250px; margin-left: 30px; padding-left: 10px; }
     
     .intro div { padding: 4px; }
@@ -36,39 +58,40 @@
     .box> h2 { font-size: 1.4rem; }
 
     #about div { margin: 22px 46px; }
-    #self { font-size: 12px; width: 75%;}
-    #more-about { font-size: 11px; margin: 20px 0; letter-spacing: 0.4px; width: 75%;}
+    #self { font-size: 12px; width: 80%;}
+    #more-about { font-size: 11px; margin: 20px 0; letter-spacing: 0.4px; width: 80%;}
 
     #case { margin-top: 0px; }
-    .skill-package {padding: 10px 15px; margin: 15px 0; width: 60%;}
+    #skill-container { grid-column-gap: 0px; grid-template-columns: repeat(auto-fit, minmax(350px, 2fr)); }
+    .skill-package {padding: 10px 15px; margin: 15px auto; width: 95%;}
     .skill-name { font-size: 12px; margin: 5px 0; letter-spacing: 0.7px;}
     .skill-value { margin-left: auto; font-size: 12px; letter-spacing: 0.7px;}
 
     .progress-bar { height: 15px; margin-top: 4px; }
     .progress-bar> div { height: 15px; }
 
-    .project-container { grid-column-gap: 0px; }
-    .project-box {width: 250px;}
+    .project-container { grid-column-gap: 0px; grid-template-columns: repeat(auto-fit, minmax(380px, 2fr));}
+    .project-box {width: 350px;}
     .project-box h3 {text-align: center}
-    .project-box img { width: 200px;}
+    .project-box img { width: 300px;}
 
     .open-btn { font-size: 10px;}
 
-    .project-info {width: 250px; padding: 10px;}
-    .project-info img {width: 200px; margin: 6px 0 }
+    .project-info {width: 85%; max-width: 600px; padding: 10px;}
+    .project-info img {width: 85%; margin: 6px 0 }
     .project-info h2 { font-size: 1.3rem; }
     .project-description { font-size: 12px; }
     .project-info h2, p, button {margin: 6px 0}
     .Modal {padding-top: 100px;}
-    .Close {font-size: 12px}
+    .Close {font-size: 20px}
 
-    .achievement-box {width: 300px;}
-    .achievement-box img {width: 250px;}
+    .achievement-box {width: 85%; max-width: 600px;}
+    .achievement-box img {width: 85%; }
     .achievement-box li { font-size: 13px; margin-left: 20px; }
 
     #contact {margin-bottom: -40px;}
-    #my-form { width: 330px; height: 370px;}
-    #message { height: 80px; font-size: 10px; }
+    #my-form { width: 80%; height: 370px; max-width: 500px;}
+    #message { height: 90px; font-size: 10px; }
     .input-box { margin: 7px auto; height: 20px; font-size: 10px; }
     .contact-btn {height: 20px; width: 100px; font-size: 10px}
 
@@ -83,8 +106,7 @@
 }
 
 @media (max-width: 560px) {
-    .info { height: 87vh;}
-    .intro {width: 360px; height: 80%; margin-left: 30px; padding-left: 10px; }
+    .intro {width: 360px; height: 250px; margin-left: 30px; padding-left: 10px; }
     
     #hello { font-weight: bold; font-size: 45px; }
     #name { font-size: 30px; }
@@ -102,27 +124,20 @@
 
 @media (max-width: 399px) {
     .line { width: 50%; margin: 10px auto; height: 1.4px; }
-    .sidebar {
-        position: -webkit-fixed;
-        position: fixed;
-        z-index: 3;
-        height: 460px;
+    .navbar {
+        height: 374px;
         box-shadow: 3px 3px 8px rgb(73, 22, 22);
     }
-    .sidebar h2 { font-size: 20px }
-    #navbar li { width: 148px; padding: 4px 0; }
-    #navbar li a { font-size: 14px; padding: 3px 8px; letter-spacing: 0.2px; }
-    #cross { margin-left: 143px; }
-
-    #active-arrow-0, #active-arrow-2, #active-arrow-1, #active-arrow-3, #active-arrow-4, #active-arrow-5 { 
-        font-size: 24px;
-    }
+    #profile h3 { font-size: 17px; }
+    .navbar li { width: 148px; padding: 4px 0; }
+    .navbar li a { font-size: 14px; padding: 3px 8px; letter-spacing: 0.2px; }
+    .theme-btn {width: 100%; font-size: 12px; }
 
     .mode { width: 80px; right: 18px; }
 
-    .info { padding-right: 0px; height: 86vh;}
-    .first-page { flex-direction: column; }
-    .intro { width: 280px; height: 100%; margin-left: 0px; padding-left: 10px; }
+    .info { padding-right: 0px; }
+    .first-page { flex-direction: column; justify-content: center;}
+    .intro { width: 280px; height: 200px; margin-left: 0px; padding-left: 10px; }
     
     .intro div { padding: 2px; }
     #hello { font-weight: bold; font-size: 35px; }
@@ -143,7 +158,8 @@
     #more-about { font-size: 11px; margin: 20px auto; letter-spacing: 0.4px; width: 75%; }
 
     #case { margin-top: 0px; }
-    .skill-package {padding: 6px 10px; margin: 10px 0;}
+    #skill-container { grid-column-gap: 0px; grid-template-columns: repeat(auto-fit, minmax(200px, 2fr)); }
+    .skill-package {padding: 6px 10px; margin: 10px 0; width: 100%;}
     .skill-name { font-size: 10px; margin: 3px 0; letter-spacing: 0.5px;}
     .skill-value { margin-left: auto; font-size: 10px; font-size: 10px; letter-spacing: 0.5px;}
 
@@ -151,33 +167,33 @@
     .progress-bar> div { height: 8px; }
 
     .project-container { grid-column-gap: 20px; }
-    .project-box {width: 230px;}
+    .project-box {width: 90%;}
     .project-box h3 {text-align: center; font-size: 1.2rem;}
-    .project-box> img { width: 180px;}
+    .project-box> img { width: 90%;}
 
     .open-btn { font-size: 8px; margin: 5px 0; padding: 3px 15px;}
 
-    .project-info {width: 250px; padding: 10px;}
-    .project-info img {margin: 5px 0; width: 200px;}
+    .project-info {width: 85%; padding: 10px;}
+    .project-info img {margin: 5px 0; width: 85%;}
     .project-info h2 { font-size: 1.2rem; }
     .project-description { font-size: 10px; }
     .project-info h2, p, button {margin: 5px 0}
     .Modal {padding-top: 80px;}
-    .Close {font-size: 12px}
+    .Close {font-size: 17px}
 
     .achievement-container {width: 100%;}
-    .achievement-box {width: 220px;}
-    .achievement-box img {width: 160px;}
+    .achievement-box {width: 85%;}
+    .achievement-box img {width: 85%;}
     .achievement-box li { font-size: 9px; margin-left: 20px; }
 
     #contact { margin-bottom: -200px;}
-    #my-form { width: 200px; height: 240px; padding: 15px 12px;}
+    #my-form { width: 85%; height: 240px; padding: 15px 12px;}
     .input-head { font-size: 10px; margin: 5px 0}
     #message { height: 80px; font-size: 8px; margin-bottom: 5px; }
     .input-box { margin: 5px auto; height: 15px; font-size: 8px; }
     .contact-btn {height: 20px; width: 80px; font-size: 8px}
 
-    #up-arrow-2 {margin-top: 5px;}
+    #up-arrow-2 {margin-top: 5px; line-height: 3em;}
     #up-arrow-2 a {font-size: 11px; margin: 10px 0;}
 
     #foot { height: 200px; }
@@ -195,49 +211,38 @@
 }
 
 @media (max-width: 324px) {
-    .sidebar {
+    .navbar {
         height: 400px;
-        width: 150px;
     }
     i.fa-2xl { font-size: 25px;}
 
-    .sidebar h2 { font-size: 13px }
-    #navbar li { width: 105px; padding: 3px 0; }
-    #navbar li a { font-size: 10px; padding: 2px 5px; letter-spacing: 0.1px; }
-    #profile { margin-left: 30px; }
+    #profile h3 { font-size: 15px }
+    .navbar li { padding: 3px 0; }
+    .navbar li a { font-size: 14px; padding: 2px 5px; letter-spacing: 0.1px; }
     #profile img { height: 60px;}
-
-    #active-arrow-0, #active-arrow-2, #active-arrow-1, #active-arrow-3, #active-arrow-4, #active-arrow-5 { 
-        font-size: 18px;
-    }
     
-    #cross { margin-top: 0px; margin-left: 122px; }
     .mode { width: 90px; }
 
-    .mode { right: 0px; margin-top: -9px; margin-right: 10px;}
+    .mode { right: 10px; }
     .box> h2 { font-size: 1.1rem; }
 
     .project-container { display: flex; flex-direction: column; }
-    .project-box {width: 160px;}
     .project-box h3 {text-align: center; font-size: 15px; margin: 5px 0;}
-    .project-box> img { width: 130px;}
 
     .Modal {padding-top: 100px;}
 
     .open-btn { font-size: 7px; margin: 3px 0; padding: 3px 12px;}
 
-    .project-info {width: 160px; padding: 10px; height: 240px}
-    .project-info img {margin: 5px 0; width: 130px; }
+    .project-info {padding: 10px;}
+    .project-info img {margin: 5px 0; }
     .project-info h2 { font-size: 15px; }
     .project-description { font-size: 10px; }
-    .project-info h2, p, button {margin: 5px 0}
+    .project-info h2, p, button { margin: 5px 0; }
     .Modal {padding-top: 80px;}
-    .Close {font-size: 12px}
+    .Close { font-size: 13px; }
 }
 
 @media  (max-width: 300px) {
-    .achievement-box {width: 160px;}
-    .achievement-box img {width: 130px;}
     .achievement-box li { font-size: 7px; margin-left: 14px; }
     
     .bitmoji { margin-right: 5px; }
@@ -258,11 +263,11 @@
     .progress-bar> div { height: 6px; }
 
     #contact { margin-bottom: -250px;}
-    #my-form { width: 160px; height: 180px; padding: 8px;}
+    #my-form { width: 85%; height: 180px; padding: 8px;}
     .input-head { font-size: 8px; margin: 3px 0}
-    .input-box { margin: 3px auto; height: 12px; font-size: 6px; }
+    .input-box { margin: 3px auto; height: 14px; font-size: 6px; }
     #message { height: 100px; font-size: 6px; margin-bottom: 0px; }
-    .contact-btn {height: 15px; width: 60px; font-size: 6px}
+    .contact-btn {height: 18px; width: 70px; font-size: 4px}
 
     #up-arrow-2 {margin-top: 2px;}
     #up-arrow-2 a {font-size: 10px; margin: 8px 0;}

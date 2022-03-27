@@ -13,123 +13,118 @@
 	<link rel="icon" type="image/jpg" href="images/icon.jpg">
 </head>
 <body>
-	<div class="main-box" id="main">
-		<div class="sidebar sidebar-go">
-			<div class="ham">
-				<i class="fa-solid fa-circle-arrow-left fa-2xl" id="cross"></i>
-			</div>
-			<div id="profile">
-				<img src="images/profile.png" alt="">
-			</div>
-			<h2>Sarthak Sharma</h2>
-			<nav id="navbar">
-				<ul>
-					<li><a id="home-href" href="#home"><i class="fa-solid fa-house"></i> Home</a><i id="active-arrow-0" class="fa-solid fa-2xl fa-caret-left"></i></li>
-					<li><a id="about-href" href="#about"><i class="fa-solid fa-address-card"></i> About</a><i id="active-arrow-1" class="fa-solid fa-2xl fa-caret-left"></i></li>
-					<li><a id="skills-href" href="#skills"><i class="fa-solid fa-brain"></i> Skills</a><i id="active-arrow-2" class="fa-solid fa-2xl fa-caret-left"></i></li>
-					<li><a id="projects-href" href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a><i id="active-arrow-3" class="fa-solid fa-2xl fa-caret-left"></i></li>
-					<li><a id="achievements-href" href="#achievements"><i class="fa-solid fa-trophy"></i> Achievements</a><i id="active-arrow-4" class="fa-solid fa-2xl fa-caret-left"></i></li>
-					<li><a id="contact-href" href="#contact"><i class="fa-solid fa-address-book"></i> Contact</a><i id="active-arrow-5" class="fa-solid fa-2xl fa-caret-left"></i></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="container" id="home">
-			<div class="ham">
-				<i class="fa-2xl fa-solid fa-bars" id="menu"></i>
-			</div>
-			<div class="mode">
-				<i id="theme-icon" class="fa-2xl fa-solid fa-brush"></i>
-				<!-- <i class="fa-2xl fa-solid fa-palette"></i> -->
-				<div class="dropdown-content">
-					<a onclick="change_theme('light-mode')" id="light">Light</a>
-					<a onclick="change_theme('dark-mode')" id="dark">Dark</a>
-					<a onclick="change_theme('blue-mode')" id="blue">Blue</a>
-					<a onclick="change_theme('green-mode')" id="green">Green</a>
+	<div class="container" id="home">
+		<div class="info">
+			<div class="first-page">
+				<div class="intro">
+					<div id="hello" data-aos="fade-up">Hi,</div>
+					<div id="name">I am <b>Sarthak Sharma</b></div>
+					<div id="passion">'Competitive Programmer, Web Developer'</div>
+					<div id="resume">
+						<button class="btn" type="submit">Download Resume</button>
+					</div>
 				</div>
-			</div>
-			<div class="info">
-				<div class="first-page">
-					<div class="intro">
-						<div id="hello" data-aos="fade-up">Hi,</div>
-						<div id="name">I am <b>Sarthak Sharma</b></div>
-						<div id="passion">'Competitive Programmer, Web Developer'</div>
-						<div id="resume">
-							<button class="btn" type="submit">Download Resume</button>
-						</div>
-					</div>
-					<div class="bitmoji">
-						<img src="images/hello.png" alt="">
-					</div>
+				<div class="bitmoji">
+					<img src="images/hello.png" alt="">
 				</div>
 			</div>
 			<div id="scroll-bar">
-				<a href="#about"><i id="scroll" class="scroll fa-2xl fa-solid fa-angles-down"></i></a>
+				<a><i id="scroll" class="scroll fa-2xl fa-solid fa-angles-down"></i></a>
 			</div>
-			<div class="all-box">
-				<div class="box reveal" id="about">
-					<h2>ABOUT ME</h2>
-					<hr class="underline" style="width: 12%;">
-					<div id="self" class="reveal"> 
-						Hello, My name is <b>Sarthak Sharma</b>, I am currently pursuing Bachelor of Technology from Graphic Era Hill University, Bhimtal with Computer Science and Engineering of batch (2019 - 2023). 
+		</div>
+		<div class="all-box">
+			<div class="nav-menu">
+				<div class="ham fa-2xl fa-solid fa-bars" id="menu"></div>
+				<div class="ham fa-solid fa-xmark fa-3xl" id="cross"></div>
+				<nav class="navbar navbar-go">
+					<ul>
+						<div id="profile">
+							<a onclick="backToTop()"><img src="images/profile.png" alt=""></a>
+							<h3>Sarthak Sharma</h3>
+						</div>
+						<li><a id="home-href" onclick="backToTop()"><i class="fa-solid fa-house"></i> Home</a></li>
+						<li><a id="about-href"><i class="fa-solid fa-address-card"></i> About</a></li>
+						<li><a id="skills-href"><i class="fa-solid fa-brain"></i> Skills</a></li>
+						<li><a id="projects-href"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+						<li><a id="achievements-href"><i class="fa-solid fa-trophy"></i> Achievements</a></li>
+						<li><a id="contact-href"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+					</ul>
+				</nav>
+				<div class="mode">
+					<button class="theme-btn"><i class="fa-xl fa-solid fa-brush"></i> Theme</button>
+					<div class="dropdown-content">
+						<a onclick="change_theme('light-mode')" id="light">Light</a>
+						<a onclick="change_theme('dark-mode')" id="dark">Dark</a>
+						<a onclick="change_theme('blue-mode')" id="blue">Blue</a>
+						<a onclick="change_theme('green-mode')" id="green">Green</a>
 					</div>
-					<div class="self">
-
-					</div>
-					<div id="more-about" class="reveal">
-						<ul>
-							<li class="reveal">Quest to work and learn in a real professional and vying ambience that enables me to cope with the emerging as well as latest technology andscope for widening the spectrum of my knowledge.</li>
-							<li class="reveal">I have a good problem Solving Ability.</li>
-							<li class="reveal">I am a member of Coding Club (WeCode) in our college and their I am
-								teaching a concepts for competitive programming with c++.</li>
-							<li class="reveal">I am good in C++ programming language.</li>
-							<li class="reveal">I am confident, hardworking and have a never - say - die attitude.</li>
-							<li class="reveal">I am a good team player.</li>
-							<li class="reveal">I am currently learning Web Development.</li>
-							<li class="reveal">Excellent capability to explore, learn and understand newer business domains and technology.</li>
-						</ul>
-					</div>
 				</div>
-				<div id="up-arrow-1">
-					<a href="#home"><i class="scroll fa-2xl fa-solid fa-angles-up"></i>
-						<span class="scroll">BACK TO TOP</span>
-					</a>
+			</div>
+			<div class="box reveal" id="about">
+				<h2>ABOUT ME</h2>
+				<hr class="underline" style="width: 16vw; max-width: 80px">
+				<div id="self" class="reveal"> 
+					Hello, My name is <b>Sarthak Sharma</b>, I am currently pursuing Bachelor of Technology from Graphic Era Hill University, Bhimtal with Computer Science and Engineering of batch (2019 - 2023). 
 				</div>
-				<hr class="line reveal" id="case">
-				<div class="box reveal" id="skills">
-					<h2>SKILLS</h2>
-					<hr class="underline" style="width: 6%;">					
-				</div>
-				<hr class="line reveal">
-				<div class="box reveal" id="projects">
-					<h2>PROJECTS</h2>
-					<hr class="underline" style="width: 12%;">
-					<div id="tmp" class="project-container"></div>
-				</div>
-				<hr class="line reveal">
-				<div class="box reveal" id="achievements">
-					<h2>ACHIEVEMENTS</h2>
-					<hr class="underline" style="width: 20%; height: 2px;">
-					<div class="reveal achievement-container"></div>
+				<div class="self">
 					
 				</div>
-				<hr class="line reveal">
-				<div class="box reveal" id="contact">
-					<h2>CONTACT ME</h2>
-					<hr class="underline" style="width: 18%; height: 2px;">
-					<form id="my-form">
-						<h4 class="input-head reveal" >I'LL BE GLAD TO ANSWER YOUR QUESTIONS</h4>
-						<input id="name-input" class="input-box reveal" type="name" placeholder="Name" required>
-						<input id="email-input" class="input-box reveal" type="email" placeholder="Email Address (i.e. abc@example.com)" required>
-						<input id="subject-input" class="input-box reveal" type="subject" placeholder="Subject" required>
-						<textarea class="input-box reveal" name="" id="message" cols="30" rows="10" required placeholder="Your Message..."></textarea>
-						<button class="reveal contact-btn" type="submit">Send Message</button>
-					</form>
+				<div id="more-about" class="reveal">
+					<ul>
+						<li class="reveal">Quest to work and learn in a real professional and vying ambience that enables me to cope with the emerging as well as latest technology andscope for widening the spectrum of my knowledge.</li>
+						<li class="reveal">I have a good problem Solving Ability.</li>
+						<li class="reveal">I am a member of Coding Club (WeCode) in our college and their I am
+							teaching a concepts for competitive programming with c++.</li>
+						<li class="reveal">I am good in C++ programming language.</li>
+						<li class="reveal">I am confident, hardworking and have a never - say - die attitude.</li>
+						<li class="reveal">I am a good team player.</li>
+						<li class="reveal">I am currently learning Web Development.</li>
+						<li class="reveal">Excellent capability to explore, learn and understand newer business domains and technology.</li>
+					</ul>
 				</div>
-				<div id="up-arrow-2">
-					<a href="#home"><i class="scroll fa-2xl fa-solid fa-angles-up"></i>
-						<span class="scroll">BACK TO TOP</span>
-					</a>
-				</div>
+			</div>
+			<div id="up-arrow-1">
+				<a onclick="backToTop()">
+					<span class="fa-2xl fa-solid fa-angles-up"></span>
+					<span>BACK TO TOP</span>
+				</a>
+			</div>
+			<hr class="line reveal" id="case">
+			<div class="box reveal" id="skills">
+				<h2>MY SKILLS</h2>
+				<hr class="underline" style="width: 15vw; max-width: 100px">
+				<div id="skill-container"></div>				
+			</div>
+			<hr class="line reveal">
+			<div class="box reveal" id="projects">
+				<h2>MY PROJECTS</h2>
+				<hr class="underline" style="width: 25vw; height: 2px; max-width: 140px">
+				<div id="tmp" class="project-container"></div>
+			</div>
+			<hr class="line reveal">
+			<div class="box reveal" id="achievements">
+				<h2>MY ACHIEVEMENTS</h2>
+				<hr class="underline" style="width: 30vw; height: 2px; max-width: 180px">
+				<div class="reveal achievement-container"></div>
+				
+			</div>
+			<hr class="line reveal">
+			<div class="box reveal" id="contact">
+				<h2>CONTACT ME</h2>
+				<hr class="underline" style="width: 23vw; height: 2px; max-width: 120px">
+				<form id="my-form">
+					<h4 class="input-head reveal" >I'LL BE GLAD TO ANSWER YOUR QUESTIONS</h4>
+					<input id="name-input" class="input-box reveal" type="name" placeholder="Name" required>
+					<input id="email-input" class="input-box reveal" type="email" placeholder="Email Address (i.e. abc@example.com)" required>
+					<input id="subject-input" class="input-box reveal" type="subject" placeholder="Subject" required>
+					<textarea class="input-box reveal" name="" id="message" cols="30" rows="10" required placeholder="Your Message..."></textarea>
+					<button class="reveal contact-btn" type="submit">Send Message</button>
+				</form>
+			</div>
+			<div id="up-arrow-2">
+				<a onclick="backToTop()"><i class="scroll fa-2xl fa-solid fa-angles-up"></i>
+					<span class="scroll">BACK TO TOP</span>
+				</a>
 			</div>
 		</div>
 	</div>

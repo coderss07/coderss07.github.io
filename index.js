@@ -1,26 +1,40 @@
 // SlideBar Javascript
 
-document.querySelector('#cross').style.display = 'none';
-document.querySelectorAll('.ham')[1].addEventListener("click", () => {
-	document.querySelector('.sidebar').classList.toggle('sidebar-go');
-	setTimeout(() =>{
-		document.querySelector('#cross').style.display = 'inline';
-	}, 350)
+document.querySelector('#menu').addEventListener("click", () => {
+	document.querySelector('.navbar').classList.toggle('navbar-go');
+    document.querySelector('#cross').style.display = 'inline';
 	document.querySelector('#menu').style.display = 'none';
 });
 
-document.querySelectorAll('.ham')[0].addEventListener("click", () => {
-	document.querySelector('.sidebar').classList.toggle('sidebar-go');
-	setTimeout(() =>{
-		document.querySelector('#menu').style.display = 'inline';
-	}, 400)
+document.querySelector('#cross').addEventListener("click", () => {
+    document.querySelector('.navbar').classList.toggle('navbar-go');
+    document.querySelector('#menu').style.display = 'inline';
 	document.querySelector('#cross').style.display = 'none';
 });
+
+window.onclick = function(e) {
+	console.log(e.target)
+	var obj = document.querySelector('.navbar');
+	if(e.target == obj) {
+		obj.classList.toggle('navbar-go');
+		document.querySelector('#menu').style.display = 'inline';
+		document.querySelector('#cross').style.display = 'none';
+	}
+}
+
+window.addEventListener('resize', () => {
+	var wid = window.screen.width;
+	if(wid > 1070) {
+		document.querySelector('#cross').style.display = null;
+		document.querySelector('#menu').style.display = null;
+	}
+})
+	
 
 // Skill Fetching
 
 fetch("/skills_data.json").then(response => response.json()).then(resp => {
-	const skills_obj = document.getElementById('skills');
+	const skills_obj = document.getElementById('skill-container');
 	let skillContent = skills_obj.innerHTML;
 	const obj = resp.data;
 	for(var i = 0; i < obj.length; i++) {
@@ -103,11 +117,11 @@ fetch("/project_data.json").then(response => response.json()).then(resp => {
 
 //  Open Modal
 var body = document.querySelector('body');
-var container = document.getElementById('main');
+var container = document.querySelector('.container');
 
 function open_window(id) {
 	var modal = document.getElementById(id);
-	modal.className = "Modal is-visuallyHidden theme";
+	modal.className = "Modal is-visuallyHidden";
 	setTimeout(function() {
 		container.className = "main-box is-blurred";
 		modal.className = "Modal";
@@ -293,26 +307,57 @@ if(theme_obj.href == "styles/lightTheme.css") {
 	mode.style.color = 'white';
 }
 
-// To active sidebar tags
+// To active navbar tags
 
 var sidebar_ids = ['#home', '#about', '#skills', '#projects', '#achievements', '#contact'];
 
-document.querySelector(`#active-arrow-0`).style.display = 'inline';
-document.querySelector(`${sidebar_ids[0]}-href`).style.backgroundImage = 'linear-gradient(to right, red, orange)';
-document.querySelector(`${sidebar_ids[0]}-href`).style.color = 'white';
+document.querySelector(`${sidebar_ids[0]}-href`).parentNode.style.borderBottom = '4px solid rgb(0, 204, 255)';
+document.querySelector(`${sidebar_ids[0]}-href`).style.color = 'rgb(0, 204, 255)';
 
 window.addEventListener('scroll', (event) => {
 	for(let i = 0; i < 6; i++) {
 		var topPosition = document.querySelector(sidebar_ids[i]).getBoundingClientRect().top;
 		if(topPosition <= 200) {
 			for(var j = 0; j < 6; j++) {
-				document.querySelector(`#active-arrow-${j}`).style.display = 'none';
-				document.querySelector(`${sidebar_ids[j]}-href`).style.backgroundImage = null;
+				document.querySelector(`${sidebar_ids[j]}-href`).parentNode.style.borderBottom = null;
 				document.querySelector(`${sidebar_ids[j]}-href`).style.color = null;
 			}
-			document.querySelector(`#active-arrow-${i}`).style.display = 'inline';
-			document.querySelector(`${sidebar_ids[i]}-href`).style.backgroundImage = 'linear-gradient(to right, red, orange)';
-			document.querySelector(`${sidebar_ids[i]}-href`).style.color = 'white';
+			document.querySelector(`${sidebar_ids[i]}-href`).parentNode.style.borderBottom = '4px solid rgb(0, 204, 255)';
+			document.querySelector(`${sidebar_ids[i]}-href`).style.color = 'rgb(0, 204, 255)';
 		}
 	}
 });
+
+document.querySelector(`${sidebar_ids[1]}-href`).addEventListener('click', () => {
+	const y = document.querySelector(sidebar_ids[1]).getBoundingClientRect().top + window.pageYOffset - 100;
+	window.scrollTo({top: y});
+});
+
+document.querySelector(`${sidebar_ids[2]}-href`).addEventListener('click', () => {
+	const y = document.querySelector(sidebar_ids[2]).getBoundingClientRect().top + window.pageYOffset - 100;
+	window.scrollTo({top: y});
+});
+
+document.querySelector(`${sidebar_ids[3]}-href`).addEventListener('click', () => {
+	const y = document.querySelector(sidebar_ids[3]).getBoundingClientRect().top + window.pageYOffset - 100;
+	window.scrollTo({top: y});
+});
+
+document.querySelector(`${sidebar_ids[4]}-href`).addEventListener('click', () => {
+	const y = document.querySelector(sidebar_ids[4]).getBoundingClientRect().top + window.pageYOffset - 100;
+	window.scrollTo({top: y});
+});
+
+document.querySelector(`${sidebar_ids[5]}-href`).addEventListener('click', () => {
+	const y = document.querySelector(sidebar_ids[5]).getBoundingClientRect().top + window.pageYOffset - 100;
+	window.scrollTo({top: y});
+});
+
+document.querySelector(`#scroll`).addEventListener('click', () => {
+	const y = document.querySelector(sidebar_ids[1]).getBoundingClientRect().top + window.pageYOffset - 100;
+	window.scrollTo({top: y});
+});
+
+function backToTop() {
+	document.querySelector(sidebar_ids[0]).scrollIntoView();
+}
