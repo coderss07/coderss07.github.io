@@ -10,7 +10,7 @@ body {
 
 .nav-menu {
     background-color: rgba(0, 0, 0, 0.788);
-    box-shadow: 0px 5px 8px rgb(255, 255, 255);
+    box-shadow: 0px 3px 10px rgb(255, 255, 255);
 }
 
 .navbar {
@@ -33,10 +33,10 @@ body {
     background: rgba(0, 0, 0, 0.322);
     background-size: cover;
 	position: absolute;
-	top: -40px;
+	top: 0px;
 	left: 0px;
 	right: 0px;
-	bottom: -90px;
+	bottom: 0px;
 }
 
 .theme-btn {

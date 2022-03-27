@@ -44,7 +44,7 @@ html {
 
 #profile {
     /* border: 0.5px solid red; */
-    width: 200px;
+    width: 150px;
     height: 100%;
     align-items: center;
     display: flex;
@@ -190,7 +190,7 @@ html {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 90%;
+    height: 85%;
     align-items: center;
     justify-content: space-between;
 }

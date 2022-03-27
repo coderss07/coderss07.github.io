@@ -7,7 +7,8 @@
         background-color: white;
         padding: 0;
         /* height: 100%; */
-        width: 220px;
+        width: 200px;
+        padding-bottom: 20px;
         position: absolute;
         top: 71px;
         box-shadow: 0 3px 10px black;
@@ -125,7 +126,7 @@
 @media (max-width: 399px) {
     .line { width: 50%; margin: 10px auto; height: 1.4px; }
     .navbar {
-        height: 374px;
+        padding-bottom: 20px;
         box-shadow: 3px 3px 8px rgb(73, 22, 22);
     }
     #profile h3 { font-size: 17px; }
@@ -212,7 +213,7 @@
 
 @media (max-width: 324px) {
     .navbar {
-        height: 400px;
+        padding-bottom: 20px;
     }
     i.fa-2xl { font-size: 25px;}
 
