@@ -38,14 +38,14 @@ body {
     background: rgba(30, 255, 0, 0.178);
     background-size: cover;
 	position: absolute;
-	top: -40px;
+	top: 0px;
 	left: 0px;
 	right: 0px;
-	bottom: -90px;
+	bottom: 0px;
 }
 
-#cross, #menu {
-    color: white;
+.ham span {
+    background: rgb(255, 255, 255);
 }
 
 .theme-btn {

@@ -9,6 +9,10 @@ body {
     border-color: black;
 }
 
+.ham span {
+    background: black;
+}
+
 .nav-menu {
     background-color: rgba(255, 255, 255, 0.781);
     box-shadow: 0 5px 8px rgb(0, 0, 0);
@@ -34,10 +38,10 @@ body {
     background: rgba(255, 255, 255, 0.322);
     background-size: cover;
 	position: absolute;
-	top: -40px;
+	top: 0px;
 	left: 0px;
 	right: 0px;
-	bottom: -90px;
+	bottom: 0px;
 }
 
 .theme-btn {

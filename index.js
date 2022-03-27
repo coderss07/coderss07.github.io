@@ -1,35 +1,14 @@
 // SlideBar Javascript
 
-document.querySelector('#menu').addEventListener("click", () => {
-	document.querySelector('.navbar').classList.toggle('navbar-go');
-    document.querySelector('#cross').style.display = 'inline';
-	document.querySelector('#menu').style.display = 'none';
-});
-
-document.querySelector('#cross').addEventListener("click", () => {
-    document.querySelector('.navbar').classList.toggle('navbar-go');
-    document.querySelector('#menu').style.display = 'inline';
-	document.querySelector('#cross').style.display = 'none';
-});
-
-window.onclick = function(e) {
-	console.log(e.target)
-	var obj = document.querySelector('.navbar');
-	if(e.target == obj) {
-		obj.classList.toggle('navbar-go');
-		document.querySelector('#menu').style.display = 'inline';
-		document.querySelector('#cross').style.display = 'none';
+document.querySelector('.ham').addEventListener("click", () => {
+	var obj = document.querySelector('#check');
+	if(obj.checked) {
+		console.log
+		document.querySelector('.navbar').className = 'navbar';
+	} else {
+		document.querySelector('.navbar').className = 'navbar navbar-go';
 	}
-}
-
-window.addEventListener('resize', () => {
-	var wid = window.screen.width;
-	if(wid > 1070) {
-		document.querySelector('#cross').style.display = null;
-		document.querySelector('#menu').style.display = null;
-	}
-})
-	
+});
 
 // Skill Fetching
 
