@@ -533,7 +533,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     z-index: 9999;
     width: 100vw;
     height: 100%;
-    padding-top: 60px;
+    padding-top: 50px;
     -webkit-transition: 0.5s;
     overflow: auto;
     transition: all 0.3s linear;
@@ -562,8 +562,8 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 .Close {
     /* border: 1px solid rgb(0, 0, 0); */
     margin-left: auto;
-    margin-right: 15px;
-    font-size: 20px;
+    margin-right: 20px;
+    font-size: 25px;
 }
   
 .Close:hover, .Close:focus {

@@ -62,7 +62,7 @@ fetch("/project_data.json").then(response => response.json()).then(resp => {
 		let url = element.url;					
 		let des = `<div id="${id}" class="Modal is-hidden is-visuallyHidden">
 						<div class="project-info">
-							<span onclick="close_modal('${id}')" class="Close">&times;</span>
+							<div onclick="close_modal('${id}')" class="Close">&times;</div>
 							<h2 class="reveal">${title}</h2>
 							<img class="reveal" src="${imageURL}" alt="">
 							<p class="project-description reveal"> ${description} </p>
