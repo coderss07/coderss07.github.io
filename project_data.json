@@ -10,7 +10,7 @@
         {
             "id": "attendancesystem",
             "title": "Attendance Monitoring System",
-            "description": "It was made in purely python",
+            "description": "It was made purely in python",
             "imageURL": "images/attendance.png",
             "url": "https://github.com/coderss07/attendance-monitoring-system"
         },
