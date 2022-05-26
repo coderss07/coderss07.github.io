@@ -183,15 +183,8 @@ window.addEventListener("scroll", reveal);
 
 // Contact through Mail
 
-// var js_form = document.getElementById("my-form");
-// js_form.addEventListener("submit", function (e) {
-//     e.preventDefault();
-// });
-
 document.getElementById('my-form').addEventListener('submit', function(event) {
     event.preventDefault();
-    // var userid = "sarthaksharma0709@gmail.com"
-    // emailjs.init(userid);
     var btn = document.querySelector('.contact-btn');
 
     btn.innerHTML = 'Sending...';
@@ -224,18 +217,6 @@ document.getElementById('my-form').addEventListener('submit', function(event) {
         alert("FAILED...");
     });
 });
-
-// var sendButton = document.querySelector('.contact-btn');
-// sendButton.onclick = js_send;
-
-// function toParams(data_js) {
-//     var form_data = [];
-//     for ( var key in data_js ) {
-//         form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
-//     }
-//     return form_data.join("&");
-// }
-
 
 // Change Themes
 
