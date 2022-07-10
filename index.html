@@ -1,178 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="og:image" content="images/icon.jpeg"/>
-	<title>Sarthak Sharma - Competitive Programmer, Developer</title>
-	<link rel="stylesheet" href="styles/style.css">
-	<link rel="stylesheet" href="styles/all.css">
-	<link rel="stylesheet" href="styles/media.css">
-	<link id="theme-link" rel="stylesheet" href="styles/lightTheme.css">
-	<link rel="icon" type="image/jpg" href="images/icon.jpg">
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Sarthak Sharma - Competitive Programmer</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <meta name="description" content="Hi, I am Sarthak Sharma, a competitive programmer web developer. Welcome to my portfolio" />
+    <meta name="keywords" content="Sarthak Sharma, sarthu858, sarthu, coderss07, ss07, portfolio, student, coder, competitive programmer, sarthaksharma, sarthusharma, Sarthu Sharma" />
+    <meta property="og:title" content="Sarthak Sharma - Portfolio"/>
+    <meta property="og:description" content="Hi, I am Sarthak Sharma, a competitive programmer web developer. Welcome to my portfolio"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://coderss07.github.io/">
+    <meta name="og:site_name" content="Sarthak Sharma"/>
+    <meta name="google" content="notranslate"/>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.jpg" rel="icon">
+    <link href="assets/img/favicon.jpg" rel="apple-touch-icon">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" id="theme-mode" href="">
+
 </head>
+
 <body>
-	<div class="container" id="home">
-		<div class="info">
-			<div class="first-page">
-				<div class="intro">
-					<div id="hello" data-aos="fade-up">Hi,</div>
-					<div id="name">I am <b>Sarthak Sharma</b></div>
-					<div id="passion">'Competitive Programmer, Web Developer'</div>
-					<div id="resume">
-						<button class="btn" type="submit">Download Resume</button>
-					</div>
-				</div>
-				<div class="bitmoji">
-					<img src="images/hello.png" alt="">
-				</div>
-			</div>
-			<div id="scroll-bar">
-				<a><i id="scroll" class="scroll fa-2xl fa-solid fa-angles-down"></i></a>
-			</div>
-		</div>
-		<div class="all-box">
-			<div class="nav-menu">
-				<!-- <div class="ham fa-2xl fa-solid fa-bars" id="menu"></div>
-				<div class="ham fa-solid fa-xmark fa-3xl" id="cross"></div> -->
-				<label class="ham" for="check">
-					<input type="checkbox" id="check"/> 
-					<span></span>
-					<span></span>
-					<span></span>
-				</label>
-				<nav class="navbar navbar-go">
-					<ul>
-						<div id="profile">
-							<a onclick="backToTop()"><img src="images/profile.png" alt=""></a>
-							<h3>Sarthak Sharma</h3>
-						</div>
-						<li><a id="home-href" onclick="backToTop()"><i class="fa-solid fa-house"></i> Home</a></li>
-						<li><a id="about-href"><i class="fa-solid fa-address-card"></i> About</a></li>
-						<li><a id="skills-href"><i class="fa-solid fa-brain"></i> Skills</a></li>
-						<li><a id="projects-href"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
-						<li><a id="achievements-href"><i class="fa-solid fa-trophy"></i> Achievements</a></li>
-						<li><a id="contact-href"><i class="fa-solid fa-address-book"></i> Contact</a></li>
-					</ul>
-				</nav>
-				<div class="mode">
-					<button class="theme-btn"><i class="fa-xl fa-solid fa-brush"></i> Theme</button>
-					<div class="dropdown-content">
-						<a onclick="change_theme('light-mode')" id="light">Light</a>
-						<a onclick="change_theme('dark-mode')" id="dark">Dark</a>
-						<a onclick="change_theme('blue-mode')" id="blue">Blue</a>
-						<a onclick="change_theme('green-mode')" id="green">Green</a>
-					</div>
-				</div>
-			</div>
-			<div class="box reveal" id="about">
-				<h2>ABOUT ME</h2>
-				<hr class="underline" style="width: 16vw; max-width: 80px">
-				<div id="self" class="reveal"> 
-					Hello, My name is <b>Sarthak Sharma</b>, I am currently pursuing Bachelor of Technology from Graphic Era Hill University, Bhimtal with Computer Science and Engineering of batch (2019 - 2023). 
-				</div>
-				<div class="self">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo"><a href="index.html">Sarthak Sharma</a></h1>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#skills">Skills</a></li>
+                    <li><a class="nav-link scrollto " href="#projects">Projects</a></li>
+                    <li><a class="nav-link scrollto " href="#achievements">Achievements</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <label id="switch" class="switch">
+                        <input type="checkbox" id="slider">
+                        <span class="slider round"></span>
+                    </label>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/bg.jpg)">
+        <div class="overlay-itro"></div>
+        <div class="hero-content display-table">
+            <div class="table-cell">
+                <div class="container">
+                    <p class="display-6 color-d">Hi!</p>
+                    <h1 class="hero-title mb-4">I am <span style="color:rgb(255, 94, 94)">Sarthak Sharma</span></h1>
+                    <p class="hero-subtitle"><span class="typed" data-typed-items="Competitive Programmer, Web Developer"></span></p>
+                    <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" target="_blank" href="assets/data/SarthakSharma.pdf" role="button">Download Resume</a></p>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Hero Section -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about-mf sect-pt4 route reveal">
+            <div class="container reveal">
+                <div class="row reveal">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center reveal">
+                            <h3 class="title-a reveal">ABOUT ME</h3>
+                            <p class="subtitle-a reveal">
+                                “Spending each day living, loving, and learning.”
+                            </p>
+                            <div class="line-mf reveal"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row reveal">
+                    <div class="col-sm-12">
+                        <div class="box-shadow-full">
+                            <div class="row reveal">
+                                <div class="col-md-6">
+                                    <div class="row reveal">
+                                        <div class="col-sm-6 col-md-5">
+                                            <div class="about-img reveal">
+                                                <img src="assets/img/profile.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-7">
+                                            <div class="about-info reveal">
+                                                <p><span class="title-s reveal">Name: </span> <span class="title-s-val reveal">Sarthak Sharma</span></p>
+                                                <p><span class="title-s reveal">Profile: </span> <span class="title-s-val reveal">Competitive Programmer</span></p>
+                                                <p><span class="title-s reveal">Email: </span> <span class="title-s-val reveal">sarthu858@gmail.com</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="lead reveal">Quest to work and learn in a real professional and vying ambience that enables me to cope with the emerging as well as latest technology andscope for widening the spectrum of my knowledge.</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-6 reveal">
+                                    <div class="about-me pt-4 pt-md-0">
+                                        <div class="title-box-2">
+                                            <h5 class="title-left reveal">
+                                                About:
+                                            </h5>
+                                        </div>
+                                        <ul>
+                                            <li class="lead reveal">I am good in problem Solving and Data Structure and Algorithm.</li>
+                                            <li class="lead reveal">I am a coordinator of Competitive Programming of Coding Club (WeCode) in our college and, I am problem settler and tester of WeCode coding contests. </li>
+                                            <li class="lead reveal">I am good in C++ programming language.</li>
+                                            <li class="lead reveal">I am confident, hardworking and have a never - say - die attitude.</li>
+                                            <li class="lead reveal">Excellent capability to explore, learn and understand newer business domains and technology.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End About Section -->
+
+        <!-- ======= Skills Section ======= -->
+        <section id="skills" class="services-mf pt-5 route reveal">
+            <div class="container reveal">
+                <div class="row reveal">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center reveal">
+                            <h3 class="title-a reveal">Skills</h3>
+                            <p class="subtitle-a reveal">
+                                “The capacity to learn is a gift, the ability to learn is a skill, the willingness to learn is a choice.” <br> <strong>— Brian Herbert</strong>
+                            </p>
+                            <div class="line-mf reveal"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="skill-container" class="row reveal"></div>
+            </div>
+        </section><!-- End Skills Section -->
+
+        <!-- ======= Counter Section ======= -->
+        <div class="section-counter paralax-mf bg-image reveal" style="background-image: url(assets/img/counters-bg.jpg)">
+            <div class="overlay-mf"></div>
+            <div class="container position-relative reveal">
+                <div class="row">
+                    <div class="col-sm-3 col-lg-3 reveal">
+                        <div class="counter-box counter-box pt-4 pt-md-0">
+                            <div class="counter-ico reveal">
+                                <span class="ico-circle"><i class="bi bi-check"></i></span>
+                            </div>
+                            <div class="counter-num">
+                                <p id="project-counter" data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="counter purecounter reveal"></p>
+                                <span class="counter-text reveal">PROJECTS COMPLETED</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3 reveal">
+                        <div class="counter-box pt-4 pt-md-0">
+                            <div class="counter-ico reveal">
+                                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+                            </div>
+                            <div class="counter-num">
+                                <p id="intermediate" data-purecounter-start="0" data-purecounter-end="94" data-purecounter-duration="1" class="counter purecounter reveal"></p>
+                                <span class="counter-text reveal">P.C.M. AT INTERMEDIATE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3 reveal">
+                        <div class="counter-box pt-4 pt-md-0">
+                            <div class="counter-ico reveal">
+                                <span class="ico-circle"><i class="bi bi-journal-bookmark-fill"></i></span>
+                            </div>
+                            <div class="counter-num">
+                                <p id="high-school" data-purecounter-start="0" data-purecounter-end="8.8" data-purecounter-duration="1" class="counter purecounter reveal"></p>
+                                <span class="counter-text reveal">IN HIGH SCHOOL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3 reveal">
+                        <div class="counter-box pt-4 pt-md-0">
+                            <div class="counter-ico reveal">
+                                <span class="ico-circle"><i class="bi bi-award"></i></span>
+                            </div>
+                            <div class="counter-num">
+                                <p id="leetcode" data-purecounter-start="0" data-purecounter-end="485" data-purecounter-duration="1" class="counter purecounter reveal"></p>
+                                <span class="counter-text reveal">QUESTION ON LEETCODE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div><!-- End Counter Section -->
+
+        <!-- ======= Projects Section ======= -->
+        <section id="projects" class="portfolio-mf sect-pt4 route reveal">
+            <div class="container reveal">
+                <div class="row reveal">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center">
+                            <h3 class="title-a reveal">Projects</h3>
+                            <p class="subtitle-a reveal">
+                                Projects are vehicles to help organizations learn, change, adapt, improve, and adopt new processes, products, or technology.
+                            </p>
+                            <div class="line-mf reveal"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="project-container" class="row reveal"></div>
+            </div>
+        </section><!-- End Projects Section -->
+
+
+        <!-- ======= Achievements Section ======= -->
+        <section id="achievements" class="blog-mf sect-pt4 route reveal">
+            <div class="container reveal">
+                <div class="row reveal">
+                    <div class="col-sm-12 reveal">
+                        <div class="title-box text-center">
+                            <h3 class="title-a reveal">ACHIEVEMENTS</h3>
+                            <p class="subtitle-a reveal">
+                                “Great achievement is usually born of great sacrifice, and is never the result of selfishness.” <br> <strong> — Napoleon Hill </strong>
+                            </p>
+                            <div class="line-mf reveal"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="achievements-container" class="row reveal"></div>
+            </div>
+        </section><!-- End Achievements Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route reveal" style="background-image: url(assets/img/overlay-bg.jpg)">
+            <div class="overlay-mf"></div>
+            <div class="container reveal">
+                
+                <div class="row reveal">
+                    <div class="col-sm-12">
+                        <div class="contact-mf">
+                            <div id="contact" class="box-shadow-full">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="title-box text-center">
+                                            <h3 class="title-a reveal">
+                                                Contact Me
+                                            </h3>
+                                            <p class="subtitle-a reveal">
+                                                “I'LL BE GLAD TO ANSWER YOUR QUESTIONS.”
+                                            </p>
+                                            <div class="line-mf reveal"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row reveal">
+                                    <div class="col-md-6">
+                                        <div class="title-box-2 reveal">
+                                            <h5 class="title-left reveal">
+                                                Send Me Message
+                                            </h5>
+                                        </div>
+                                        <div>
+                                            <form id="my-form" class="php-email-form reveal">
+                                                <div class="row reveal">
+                                                    <div class="col-md-12 mb-3">
+                                                        <div class="form-group reveal">
+                                                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-3">
+                                                        <div class="form-group reveal">
+                                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-3">
+                                                        <div class="form-group reveal">
+                                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group reveal">
+                                                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 text-center my-3">
+                                                        <div class="loading reveal">Loading</div>
+                                                        <div class="error-message reveal"></div>
+                                                        <div class="sent-message reveal">Your message has been sent. Thank you!</div>
+                                                    </div>
+                                                    <div class="col-md-12 text-center reveal">
+                                                        <button id="contact-btn" type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 reveal">
+                                        <div class="title-box-2 pt-4 pt-md-0 reveal">
+                                            <h5 class="title-left reveal">
+                                                Get in Touch
+                                            </h5>
+                                        </div>
+                                        <div class="more-info reveal">
+                                            <div class="info">
+												<div class="address reveal">
+													<a href="https://goo.gl/maps/XKSwgjVrZjRMTC8J9" target="_blank"><i class="bi bi-geo-alt"></i></a>
+													<h4>Location:</h4>
+													<p>Nainital, Uttarakhand</p>
+												</div>
 					
-				</div>
-				<div id="more-about" class="reveal">
-					<ul>
-						<li class="reveal">Quest to work and learn in a real professional and vying ambience that enables me to cope with the emerging as well as latest technology andscope for widening the spectrum of my knowledge.</li>
-						<li class="reveal">I have a good problem Solving Ability and good in Data Structure and Algorithm.</li>
-						<li class="reveal">I am a coordinator of Competitive Programming of Coding Club (WeCode) in our college and, I am problem settler and tester of WeCode coding contests. </li>
-						<li class="reveal">I am good in C++ programming language.</li>
-						<li class="reveal">I am confident, hardworking and have a never - say - die attitude.</li>
-						<li class="reveal">I am a good team player.</li>
-						<li class="reveal">I am currently learning Web Development.</li>
-						<li class="reveal">Excellent capability to explore, learn and understand newer business domains and technology.</li>
-					</ul>
-				</div>
-			</div>
-			<div id="up-arrow-1">
-				<a onclick="backToTop()">
-					<div class="fa-2xl fa-solid fa-angles-up"></div>
-					<div>BACK TO TOP</div>
-				</a>
-			</div>
-			<hr class="line reveal" id="case">
-			<div class="box reveal" id="skills">
-				<h2>MY SKILLS</h2>
-				<hr class="underline" style="width: 15vw; max-width: 100px">
-				<div id="skill-container"></div>				
-			</div>
-			<hr class="line reveal">
-			<div class="box reveal" id="projects">
-				<h2>MY PROJECTS</h2>
-				<hr class="underline" style="width: 25vw; height: 2px; max-width: 140px">
-				<div id="tmp" class="project-container"></div>
-			</div>
-			<hr class="line reveal">
-			<div class="box reveal" id="achievements">
-				<h2>MY ACHIEVEMENTS</h2>
-				<hr class="underline" style="width: 30vw; height: 2px; max-width: 180px">
-				<div class="reveal achievement-container"></div>
+												<div class="email reveal">
+													<a href="mailto:sarthu858@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+													<h4>Email:</h4>
+													<p>sarthu858@gmail.com</p>
+												</div>
 				
-			</div>
-			<hr class="line reveal">
-			<div class="box reveal" id="contact">
-				<h2>CONTACT ME</h2>
-				<hr class="underline" style="width: 23vw; height: 2px; max-width: 120px">
-				<form id="my-form">
-					<h4 class="input-head reveal" >I'LL BE GLAD TO ANSWER YOUR QUESTIONS</h4>
-					<input id="name-input" class="input-box reveal" type="name" placeholder="Name" required>
-					<input id="email-input" class="input-box reveal" type="email" placeholder="Email Address (i.e. abc@example.com)" required>
-					<input id="subject-input" class="input-box reveal" type="subject" placeholder="Subject" required>
-					<textarea class="input-box reveal" name="" id="message" cols="30" rows="10" required placeholder="Your Message..."></textarea>
-					<button class="reveal contact-btn" type="submit">Send Message</button>
-				</form>
-			</div>
-			<div id="up-arrow-2">
-				<a onclick="backToTop()"><i class="scroll fa-2xl fa-solid fa-angles-up"></i>
-					<div class="scroll">BACK TO TOP</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div id="new-line"></div>
+												<div class="phone reveal">
+													<a href="tel:9411741378"><i class="bi bi-phone"></i></a>
+													<h4>Call:</h4>
+													<p>+91 9411741378</p>
+												</div>
+											</div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+    <div id="new-line"></div>
+
+    <!-- ======= Footer ======= -->
+
+    <footer id="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="social-media reveal">
+                        <li class="icon-bw reveal">
+                            <a href="https://www.instagram.com/__sarthu__sharma__/" target="_blank"><i class="icon bi bi-instagram"></i></a>
+                        </li>
+                        <li class="icon-bw reveal">
+                            <a href="https://m.facebook.com/100010945263860/" target="_blank"><i class="icon bi bi-facebook"></i></a>
+                        </li>
+                        <li class="icon-bw reveal">
+                            <a href="https://www.linkedin.com/in/sarthak-sharma-19b3801a5" target="_blank"><i class="icon bi bi-linkedin"></i></a>
+                        </li>
+                        <li class="icon-bw reveal">
+                            <a href="https://github.com/coderss07" target="_blank"><i class="icon bi bi-github"></i></a>
+                        </li>
+                        <li class="icon-bw reveal">
+                            <a href="https://msng.link/o/?Sarthu_SS07=tg" target="_blank"><i class="icon bi bi-telegram"></i></a>
+                        </li>
+                        <li class="icon-bw reveal">
+                            <a href="https://wa.link/yuored" target="_blank"><i class="icon bi bi-whatsapp"></i></a>
+                        </li>
+                    </ul>
+                    <div class="foot-content reveal">
+                        Copyright © 2022 | All Rights Reserved
+                    </div>
+                    <div class="foot-content reveal">
+                        Developed by Sarthak Sharma.
+                    </div>
+                </div>
+            </div>
+        </div>
+      </footer><!-- End  Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('55kXDauXqk7eOb4kR') </script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
+
 </body>
-<script src="index.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<script type="text/javascript"> emailjs.init('55kXDauXqk7eOb4kR') </script>
-
-
-<footer class="reveal" id="foot">
-	<ul class="social-media reveal">
-		<li class="icon-bw reveal">
-			<a href="https://www.instagram.com/__sarthu__sharma__/" target="_blank"><i class="icon fa-xl fa-brands fa-instagram"></i></a>
-		</li>
-		<li class="icon-bw reveal">
-			<a href="https://m.facebook.com/100010945263860/" target="_blank"><i class="icon fa-xl fa-brands fa-facebook"></i></a>
-		</li>
-		<li class="icon-bw reveal">
-			<a href="https://www.linkedin.com/in/sarthak-sharma-19b3801a5" target="_blank"><i class="icon fa-xl fa-brands fa-linkedin"></i></a>
-		</li>
-		<li class="icon-bw reveal">
-			<a href="https://github.com/coderss07" target="_blank"><i class="icon fa-xl fa-brands fa-github"></i></a>
-		</li>
-		<li class="icon-bw reveal">
-			<a href="mailto: sarthaksharma0709@gmail.com" target="_blank"><i class="icon fa-xl fa-solid fa-envelope"></i></a>
-		</li>
-		<li class="icon-bw reveal">
-			<a href="https://msng.link/o/?Sarthu_SS07=tg" target="_blank"><i class="icon fa-xl fa-brands fa-telegram"></i></a>
-		</li>
-		<li class="icon-bw reveal">
-			<a href="https://wa.link/yuored" target="_blank"><i class="icon fa-xl fa-brands fa-whatsapp-square"></i></a>
-		</li>
-	</ul>
-	<div class="foot-content reveal">
-		Copyright © 2022 | All Rights Reserved
-	</div>
-	<div class="foot-content reveal">
-		Developed by Sarthak Sharma.
-	</div>
-</footer>
 </html>
-
-

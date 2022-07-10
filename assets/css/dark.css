@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#main::before {
+	content: "";
+    background: url("../img/black.png") repeat fixed;
+    position: fixed;
+    z-index: -4;
+    top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+    opacity: 40%;
+}
+
+.title-a, 
+.subtitle-a, 
+.title-left, 
+.title-s,
+.title-s-val,
+.skill-mf span,
+.w-title,
+.project-info h4,
+.Close:hover, 
+.Close:focus,
+.card-title a,
+.more-info .info h4,
+.more-info .info p,
+.navbar-mobile a,
+.lead {
+    color: white;
+}
+
+.box-shadow-full, 
+.service-box,
+.work-box,
+.project-info,
+.card-blog,
+.more-info .info,
+.navbar-mobile ul {
+    background-color:rgb(53, 53, 53);
+}
+

@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "description": "Title of Nurture Tek Knight by ”ReCogNurize 2.0” challenge",
+            "platform": "Cognizant",
+            "url": "https://drive.google.com/file/d/17T1jekouzgKVj0B77fHoii8UqiXGsJOs/view",
+            "imageUrl": "../assets/img/cognizantcertificate.png"
+        },
+        {
+            "description": "4 Star coder at Code chef (Username: coderss07)",
+            "platform": "Code Chef",
+            "url": "https://www.codechef.com/users/coderss07",
+            "imageUrl": "../assets/img/codechefrating.png"
+        },
+        {
+            "description": "Specialist at Codeforces (Username: sarthu858)",
+            "platform": "Codeforces",
+            "url": "https://codeforces.com/profile/sarthu858",
+            "imageUrl": "../assets/img/codeforcesrating.png"
+        },
+        {
+            "description": "HackerRank problem solving (Intermediate) certificate",
+            "platform": "Hackerrank",
+            "url": "https://www.hackerrank.com/certificates/257f987bba53",
+            "imageUrl": "../assets/img/problemsolvingintermediate.png"
+        },
+        {
+            "description": "HackerRank problem solving (Basic) certificate",
+            "platform": "Hackerrank",
+            "url": "https://www.hackerrank.com/certificates/73480ec02753",
+            "imageUrl": "../assets/img/problemsolvingbasic.png"
+        }
+    ]
+}

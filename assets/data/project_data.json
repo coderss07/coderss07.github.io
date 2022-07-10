@@ -1,0 +1,101 @@
+{
+    "data": [
+        {
+            "id": "portfolio",
+            "title": "My Personal Portfolio",
+            "description": [
+                "It was developed by using HTML, CSS and Javascript.",
+                "Designed a static website to represent the resume in an easy and unique way to showcase my work."
+            ],
+            "imageURL": "../assets/img/portfolio.gif",
+            "github": "https://github.com/coderss07/coderss07.github.io",
+            "status": "active",
+            "url": "https://coderss07.github.io/"
+        },
+        {
+            "id": "attendancesystem",
+            "title": "Attendance Monitoring System",
+            "description": [
+                "It was developed by using open-cv python.",
+                "It uses facial recognition technology to identify and verify a person."
+            ],
+            "imageURL": "../assets/img/attendance.png",
+            "github": "https://github.com/coderss07/attendance-monitoring-system",
+            "status": "disabled",
+            "url": ""
+        },
+        {
+            "id": "covid19india",
+            "title": "Covid-19 India Visualizer",
+            "description": [
+                "It was developed by using HTML CSS and Javascript with Map-Box.",
+                "Mapbox GL JS is a client-side JavaScript library which is used for building web map."
+            ],
+            "imageURL": "../assets/img/covid.png",
+            "github": "https://github.com/coderss07/covid-19-visiulaizer.github.io",
+            "status": "active",
+            "url": "https://coderss07.github.io/covid-19-visiulaizer.github.io/"
+        },
+        {
+            "id": "covid19world",
+            "title": "Covid-19 World Visualizer",
+            "description": [
+                "It was developed by using HTML CSS and Javascript with Map-Box.",
+                "Wordometer Api is used to acces the the real time data of Covid-19."
+            ],
+            "imageURL": "../assets/img/worldcovid.png",
+            "github": "https://github.com/coderss07/covid-19-world.github.io",
+            "status": "active",
+            "url": "https://coderss07.github.io/covid-19-world.github.io/"
+        },
+        {
+            "id": "keyboard",
+            "title": "On Screen Keyboard",
+            "description": [
+                "It was developed by using HTML, CSS and Javascript.",
+                "Designed a static website to represent the working of keyboard navigation."
+            ],
+            "imageURL": "../assets/img/OnScreenKeyboard.png",
+            "github": "https://github.com/coderss07/on-screen-keyboard.github.io",
+            "status": "active",
+            "url": "https://coderss07.github.io/on-screen-keyboard.github.io/"
+        },
+        {
+            "id": "chatapp",
+            "title": " Multi User Chatting App",
+            "description": [
+                "It was developed by using HTML, CSS, Javascript, SocketIo and NodeJs.",
+                "Node.js is responsible for creating room and managing users in the room."
+            ],
+            "imageURL": "../assets/img/chatting.png",
+            "github": "https://github.com/coderss07/real-time-chat-app",
+            "status": "active",
+            "url": "https://sarthu-chat-app.herokuapp.com/"
+        },
+        {
+            "id": "calendar",
+            "title": "Calendar Application",
+            "description": [
+                "It was developed by using C language.",
+                "Used to show to date, render month's calendar and save notes."
+            ],
+            "imageURL": "../assets/img/Calender.png",
+            "github": "https://github.com/coderss07/Calendar-Application",
+            "status": "disabled",
+            "url": ""
+        },
+        {
+            "id": "quizsite",
+            "title": "Online Quiz Website",
+            "description": [
+                "It was developed by using HTML, CSS, Javascript, PHP.",
+                "I am currently working on this project",
+                "To provide service as conduct online quiz"
+            ],
+            "imageURL": "../assets/img/quiz.png",
+            "github": "https://github.com/coderss07/quizy.github.io",
+            "status": "active",
+            "url": "https://hacktesters.infinityfreeapp.com/"
+        }
+    ]
+}
