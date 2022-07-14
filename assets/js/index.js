@@ -77,33 +77,33 @@ fetch("../assets/data/project_data.json").then(response => response.json()).then
 
 fetch("../assets/data/project_data.json").then(response => response.json()).then(resp => {
     const project_obj = document.querySelector('#project-container');
-    let projectContent = project_obj.innerHTML;
+    let projectContent = '';
     resp.data.forEach(element => {
         let id = element.id;
         let title = element.title;
         let imageURL = element.imageURL;
 
         let elem = ` <div class="col-md-4 reveal">
-                            <div class="work-box reveal">
-                                <a href="${imageURL}" data-gallery="portfolioGallery" class="portfolio-lightbox reveal">
-                                    <div class="work-img">
-                                        <img src="${imageURL}" alt="" class="img-fluid">
+                        <div class="work-box reveal">
+                            <a href="${imageURL}" data-gallery="portfolioGallery" class="portfolio-lightbox reveal">
+                                <div class="work-img reveal">
+                                    <img src="${imageURL}" alt="" class="img-fluid reveal">
+                                </div>
+                            </a>
+                            <div class="work-content reveal">
+                                <div class="row reveal">
+                                    <div class="col-sm-8 reveal">
+                                        <h2 class="w-title reveal">${title}</h2>
                                     </div>
-                                </a>
-                                <div class="work-content reveal">
-                                    <div class="row reveal">
-                                        <div class="col-sm-8 reveal">
-                                            <h2 class="w-title reveal">${title}</h2>
-                                        </div>
-                                        <div class="col-sm-4 reveal">
-                                            <div class="w-like reveal">
-                                                <a onclick="open_window('${id}')"> <span class="bi bi-arrow-right-circle-fill"></span></a>
-                                            </div>
+                                    <div class="col-sm-4 reveal">
+                                        <div class="w-like reveal">
+                                            <a onclick="open_window('${id}')"> <span class="bi bi-arrow-right-circle-fill"></span></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>`
+                        </div>
+                    </div>`
         projectContent += elem;
     })
     project_obj.innerHTML = projectContent;
