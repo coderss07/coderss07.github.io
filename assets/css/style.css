@@ -847,6 +847,14 @@ input:checked+.slider:before {
     margin-bottom: 2rem;
 }
 
+@media (max-width: 575px) {
+    .about-mf .about-img {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        max-width: 240px;
+    }
+}
+
 .about-mf .about-img img {
     margin-left: 10px;
 }

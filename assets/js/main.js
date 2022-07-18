@@ -171,44 +171,44 @@
     /**
      * Initiate portfolio lightbox 
      */
-    const portfolioLightbox = GLightbox({
-        selector: '.portfolio-lightbox'
-    });
+    
+     fetch("../assets/data/project_data.json").then(response => response.json()).then(resp => {
+        const project_obj = document.getElementById('project-container');
+        let projectContent = '';
+        resp.data.forEach(element => {
+            let id = element.id;
+            let title = element.title;
+            let imageURL = element.imageURL;
 
-    /**
-     * Testimonials slider
-     */
-    new Swiper('.testimonials-slider', {
-        speed: 600,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
-        slidesPerView: 'auto',
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        }
-    });
+            let elem = `<div class="col-md-4 reveal">
+                            <div class="work-box reveal">
+                                <a href="${imageURL}" data-gallery="portfolioGallery" class="portfolio-lightbox reveal">
+                                    <div class="work-img reveal">
+                                        <img src="${imageURL}" alt="" class="img-fluid reveal">
+                                    </div>
+                                </a>
+                                <div class="work-content reveal">
+                                    <div class="row reveal">
+                                        <div class="col-sm-8 reveal">
+                                            <h2 class="w-title reveal">${title}</h2>
+                                        </div>
+                                        <div class="col-sm-4 reveal">
+                                            <div class="w-like reveal">
+                                                <a onclick="open_window('${id}')"> <span class="bi bi-arrow-right-circle-fill"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>\n`
+            projectContent += elem;
+        })
+        project_obj.innerHTML = `${projectContent}`;
 
-    /**
-     * Portfolio details slider
-     */
-    new Swiper('.portfolio-details-slider', {
-        speed: 400,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        }
-    });
+        const portfolioLightbox = GLightbox({
+            selector: '.portfolio-lightbox'
+        });
+    })
 
     /**
      * Preloader
@@ -221,3 +221,8 @@
     }
 
 })()
+
+
+    
+
+
