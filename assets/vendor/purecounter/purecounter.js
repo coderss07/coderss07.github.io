@@ -3,7 +3,7 @@
     var units = {
         'project-counter': '',
         'intermediate': '%',
-        'high-school': ' CGPA',
+        'solved': '+',
         'leetcode': '+',
     };
     function e(e, t) {
