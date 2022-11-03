@@ -19,6 +19,12 @@
             "imageUrl": "../assets/img/codeforcesrating.png"
         },
         {
+            "description": "Knight at Leetcode (Username: sarthu858)",
+            "platform": "Leetcode",
+            "url": "https://leetcode.com/sarthu858",
+            "imageUrl": "../assets/img/leetcoderating.png"
+        },
+        {
             "description": "HackerRank problem solving (Intermediate) certificate",
             "platform": "Hackerrank",
             "url": "https://www.hackerrank.com/certificates/257f987bba53",
