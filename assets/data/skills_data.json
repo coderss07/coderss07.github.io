@@ -1,11 +1,11 @@
 {
     "data": [
         {
-            "skill":"Problem Solving Ability",
+            "skill":"Data Structures & Algorithms",
             "level": 85
         },
         {
-            "skill":"Data Structures & Algorithms",
+            "skill": "C/C++ Programming",
             "level": 85
         },
         {
@@ -17,16 +17,20 @@
             "level": 75
         },
         {
-            "skill": "C/C++ Programming",
-            "level": 85
-        },
-        {
             "skill": "Python",
             "level": 60
         },
         {
+            "skill": "Django",
+            "level": 50
+        },
+        {
             "skill": "Java",
             "level": 65
+        },
+        {
+            "skill": "Spring",
+            "level": 60
         },
         {
             "skill": "HTML5",
@@ -37,10 +41,6 @@
             "level": 70
         },
         {
-            "skill": "Object Oriented Programming",
-            "level": 75
-        },
-        {
             "skill": "JavaScript",
             "level": 60
         },
@@ -49,7 +49,7 @@
             "level": 70
         },
         {
-            "skill": "PUG",
+            "skill": "Object Oriented Programming",
             "level": 75
         },
         {
