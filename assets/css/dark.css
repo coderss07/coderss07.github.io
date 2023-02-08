@@ -1,9 +1,9 @@
-body {
+.darkmode {
     background-color: rgb(0, 0, 0);
     color: white;
 }
 
-#main::before {
+.darkmode #main::before {
 	content: "";
     background: url("../img/black.png") repeat fixed;
     position: fixed;
@@ -15,31 +15,31 @@ body {
     opacity: 40%;
 }
 
-.title-a, 
-.subtitle-a, 
-.title-left, 
-.title-s,
-.title-s-val,
-.skill-mf span,
-.w-title,
-.project-info h4,
-.Close:hover, 
-.Close:focus,
-.card-title a,
-.more-info .info h4,
-.more-info .info p,
-.navbar-mobile a,
-.lead {
+.darkmode .title-a, 
+.darkmode .subtitle-a, 
+.darkmode .title-left, 
+.darkmode .title-s,
+.darkmode .title-s-val,
+.darkmode .skill-mf span,
+.darkmode .w-title,
+.darkmode .project-info h4,
+.darkmode .Close:hover, 
+.darkmode .Close:focus,
+.darkmode .card-title a,
+.darkmode .more-info .info h4,
+.darkmode .more-info .info p,
+.darkmode .navbar-mobile a,
+.darkmode .lead {
     color: white;
 }
 
-.box-shadow-full, 
-.service-box,
-.work-box,
-.project-info,
-.card-blog,
-.more-info .info,
-.navbar-mobile ul {
+.darkmode .box-shadow-full, 
+.darkmode .service-box,
+.darkmode .work-box,
+.darkmode .project-info,
+.darkmode .card-blog,
+.darkmode .more-info .info,
+.darkmode .navbar-mobile ul {
     background-color:rgb(53, 53, 53);
 }
 

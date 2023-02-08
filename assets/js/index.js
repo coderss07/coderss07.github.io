@@ -165,16 +165,34 @@ window.addEventListener("scroll", reveal);
 
 // Change Themes
 
-var themeBtn = document.querySelector('#slider');
+let darkMode = localStorage.getItem('darkMode'); 
+        
+const darkModeToggle = document.querySelector('#slider');
 
-themeBtn.onchange = (e) => {
-    e.preventDefault();
-    var mode = document.getElementById('theme-mode');
-
-    if(themeBtn.checked) {
-        mode.href = 'assets/css/dark.css';
-    }else {
-        mode.href = '';
-    }
+const enableDarkMode = () => {
+    document.body.classList.add('darkmode');
+    localStorage.setItem('darkMode', 'enabled');
+    darkModeToggle.checked = true
 }
+
+const disableDarkMode = () => {
+    document.body.classList.remove('darkmode');
+    localStorage.setItem('darkMode', null);
+    darkModeToggle.checked = false
+}
+ 
+if (darkMode === 'enabled') {
+    enableDarkMode();
+}
+
+darkModeToggle.addEventListener('change', () => {
+    darkMode = localStorage.getItem('darkMode'); 
+    
+    if (darkMode !== 'enabled') {
+        enableDarkMode();
+    } else {  
+        disableDarkMode(); 
+    }
+});
+
 
