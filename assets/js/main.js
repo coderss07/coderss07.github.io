@@ -210,6 +210,9 @@
         });
     })
 
+     const copyRightYear = select('#copyright-year');
+     copyRightYear.innerText = new Date().getFullYear()
+
     /**
      * Preloader
      */
